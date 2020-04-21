@@ -942,6 +942,14 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "TimmyTime",
+      "type": "mob",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [
@@ -962,17 +970,18 @@
   "language_map": {
     "en_us": {
       "block.naoiphpack.slatealter": "Slate Altar",
-      "block.naoiphpack.slatebrickstairs": "Slate Brick Stairs",
       "item.minecraft.tipped_arrow.effect.toxin": "Arrow of Toxin",
+      "block.naoiphpack.slatebrickstairs": "Slate Brick Stairs",
       "block.naoiphpack.smokegrassplant": "Smokegrass Plant",
-      "block.naoiphpack.slate": "Slate",
       "item.naoiphpack.unrefinedredquartz": "Unrefined Redquartz",
+      "block.naoiphpack.slate": "Slate",
       "item.naoiphpack.naoiphgrassdrug": "Grass Drug",
       "item.naoiphpack.flowertea": "Smokegrass Flower Tea",
-      "block.naoiphpack.sacraficealtar": "Sacrafice Altar",
       "biome.naoiphpack.naoiphashbiome": "Ash Biome",
-      "item.naoiphpack.redquartzarmourlegs": "Redquartz Leggings",
+      "block.naoiphpack.sacraficealtar": "Sacrafice Altar",
       "item.naoiphpack.naoiphashdimension": "Special Ash",
+      "item.naoiphpack.redquartzarmourlegs": "Redquartz Leggings",
+      "entity.naoiphpack.timmytime": "Timmy",
       "item.naoiphpack.redquartzarmourbody": "Redquartz Body",
       "item.naoiphpack.naoiphmapleleaf.desc": "Maple Leaf Rag",
       "entity.naoiphpack.naoiphdealer": "Dealer",
@@ -999,6 +1008,7 @@
       "effect.toxin": "Toxin",
       "block.naoiphpack.slatebrickslab": "Slate Brick Slab",
       "item.naoiphpack.plasmablade": "Plasma Blade",
+      "item.naoiphpack.timmytime": "Timmy Spawn Egg",
       "itemGroup.tabnaoiphpack": "Naoiph Pack",
       "item.naoiphpack.naoiphdealer": "Dealer Spawn Egg",
       "biome.naoiphpack.naoiphmaple": "Maple Biome",
