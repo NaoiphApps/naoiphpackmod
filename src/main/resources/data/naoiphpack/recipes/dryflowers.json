@@ -1,0 +1,11 @@
+{
+  "group": "naoiphpack",
+  "type": "minecraft:smelting",
+  "experience": 1,
+  "ingredient": {
+    "item": "naoiphpack:smokegrassflower"
+  },
+  "result": {
+    "item": "naoiphpack:driedflower"
+  }
+}

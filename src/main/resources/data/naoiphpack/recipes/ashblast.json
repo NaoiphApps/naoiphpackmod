@@ -1,0 +1,11 @@
+{
+  "group": "naoiphpack",
+  "type": "minecraft:blasting",
+  "experience": 1,
+  "ingredient": {
+    "item": "naoiphpack:naoiphash"
+  },
+  "result": {
+    "item": "naoiphpack:naoiphashitem"
+  }
+}

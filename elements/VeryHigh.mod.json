@@ -1,0 +1,25 @@
+{
+  "_fv": 6,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Very High",
+    "achievementDescription": "Oh no",
+    "achievementIcon": {
+      "value": "CUSTOM:NaoiphGrassDrug"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 1,
+    "achievementType": "task",
+    "parent": {
+      "value": "story/root"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_consumed\" x=\"30\" y=\"47\"><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:NaoiphGrassDrug</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"/></next></block></xml>"
+  }
+}

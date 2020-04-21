@@ -1,0 +1,42 @@
+{
+  "_fv": 6,
+  "_type": "plant",
+  "definition": {
+    "renderType": 12,
+    "texture": "mokegrasslant",
+    "customModelName": "Cross model",
+    "plantType": "growapable",
+    "growapableSpawnType": "Crop",
+    "growapableMaxHeight": 3,
+    "name": "Smokegrass Plant",
+    "creativeTab": {
+      "value": "CUSTOM:NaoiphPack"
+    },
+    "hardness": 0.0,
+    "resistance": 0.0,
+    "luminance": 0.2,
+    "unbreakable": false,
+    "soundOnStep": {
+      "value": "PLANT"
+    },
+    "customDrop": {
+      "value": "CUSTOM:Smokegrass"
+    },
+    "dropAmount": 3,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "frequencyOnChunks": 20,
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBiomes": [],
+    "onDestroyedByPlayer": {
+      "name": "SmokegrassDrops"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "group": "naoiphpack",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_ingot"
+    },
+    "1": {
+      "item": "minecraft:glass"
+    },
+    "2": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "naoiphpack:syringe",
+    "count": 1
+  }
+}

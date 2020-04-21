@@ -1,0 +1,26 @@
+{
+  "_fv": 6,
+  "_type": "structure",
+  "definition": {
+    "structure": "brickrick",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 20000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnWorldTypes": [
+      "CUSTOM:NaoiphAshDimension"
+    ],
+    "restrictionBlocks": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:NaoiphSlateBiome"
+      },
+      {
+        "value": "CUSTOM:NaoiphAshBiome"
+      }
+    ]
+  }
+}

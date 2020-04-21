@@ -1,0 +1,40 @@
+{
+  "_fv": 6,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "ACTIVATE DRUG",
+          "onClick": {
+            "name": "NaoiphDrugKill"
+          },
+          "width": 260,
+          "height": 40,
+          "name": "ACTIVATE DRUG",
+          "x": 300,
+          "y": 99
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Insult",
+          "onClick": {
+            "name": "NaoiphDrugKill"
+          },
+          "width": 120,
+          "height": 40,
+          "name": "Insult",
+          "x": 299,
+          "y": 153
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,1029 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "NaoiphSlate",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "slate"
+    },
+    {
+      "name": "NaoiphPack",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NaoiphGrassDrug",
+      "type": "food",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NaoiphDrugKill",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NaoiphGrassDrugCrafting",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NaoiphDealer",
+      "type": "mob",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NaoiphSlateBiome",
+      "type": "biome",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NaoiphAsh",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NaoiphAshBiome",
+      "type": "biome",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NaoiphAshDimension",
+      "type": "dimension",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NaoiphBrickRick",
+      "type": "structure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NaoiphSmokingAsh",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NaoiphHotAsh",
+      "type": "structure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NaoiphMapleLeaf",
+      "type": "musicdisc",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NaoiphMaple",
+      "type": "biome",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NaoiphRedBlock",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NaoiphRedTower",
+      "type": "structure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TestGUI",
+      "type": "gui",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "OpenGUI",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BurningAsh",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NaoiphAshItem",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Ashcrafting",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AshCrafting2",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SpecialAsh",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Smokegrass",
+      "type": "item",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SmokegrassFlower",
+      "type": "item",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SmokegrassSeeds",
+      "type": "item",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SmokegrassDrops",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SmokegrassPlant",
+      "type": "plant",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "DriedFlower",
+      "type": "item",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "DryFlowers",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "VeryHigh",
+      "type": "achievement",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlowerEffects",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SmokegrassSeedsRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FlowerTea",
+      "type": "food",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "OilDamage",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Oil",
+      "type": "fluid",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "ToxinOnPotionActiveTick",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ToxinPotionExpires",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ToxinPotionStartedapplied",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Toxin",
+      "type": "potion",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Seagull",
+      "type": "mob",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "ToxinRecipe",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Prison",
+      "type": "structure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "OilOcean",
+      "type": "biome",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FindCustomBiomeCommandExecuted",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Redquartz",
+      "type": "item",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "UnrefinedRedquartz",
+      "type": "item",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "RedquartzOre",
+      "type": "block",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "RedquartsRefinery",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "PlasmaBladeMobIsHitWithTool",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlasmaBlade",
+      "type": "tool",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "RedquartzArmour",
+      "type": "armor",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "PlasmabladeRecipe",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SlateBrick",
+      "type": "block",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SlateBrickStairs",
+      "type": "block",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SlateBrickSlab",
+      "type": "block",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SlateMonument",
+      "type": "structure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Ashfuel",
+      "type": "fuel",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SlateAlter",
+      "type": "block",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SlateAltarGUI",
+      "type": "gui",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SlatealterGUIProcedure",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FilledSyringe",
+      "type": "item",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SyringeRightClickedInAir",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Syringe",
+      "type": "item",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BurnAsh",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SyringeRecipe",
+      "type": "recipe",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Baptism",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FontGUI",
+      "type": "gui",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BaptismFont",
+      "type": "block",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SlateAlterPlayerStartsToDestroy",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Jimmy",
+      "type": "item",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "JimmyHead",
+      "type": "item",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "JimmyBody",
+      "type": "item",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SacraficeAltar",
+      "type": "block",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "JimmyCraft",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SacraficeGUI",
+      "type": "gui",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SacraficeProcedure",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Boss",
+      "type": "mob",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Sacraficealtarrecipe",
+      "type": "recipe",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BossTouch",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BossAttack",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Church",
+      "type": "structure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "RuinedChurch",
+      "type": "structure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "baptised",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "mapleleaf",
+      "file": "aple-eaf-ag-rthur-iedler-and-the-oston-ops",
+      "category": "music"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "block.naoiphpack.slatealter": "Slate Altar",
+      "block.naoiphpack.slatebrickstairs": "Slate Brick Stairs",
+      "item.minecraft.tipped_arrow.effect.toxin": "Arrow of Toxin",
+      "block.naoiphpack.smokegrassplant": "Smokegrass Plant",
+      "block.naoiphpack.slate": "Slate",
+      "item.naoiphpack.unrefinedredquartz": "Unrefined Redquartz",
+      "item.naoiphpack.naoiphgrassdrug": "Grass Drug",
+      "item.naoiphpack.flowertea": "Smokegrass Flower Tea",
+      "block.naoiphpack.sacraficealtar": "Sacrafice Altar",
+      "biome.naoiphpack.naoiphashbiome": "Ash Biome",
+      "item.naoiphpack.redquartzarmourlegs": "Redquartz Leggings",
+      "item.naoiphpack.naoiphashdimension": "Special Ash",
+      "item.naoiphpack.redquartzarmourbody": "Redquartz Body",
+      "item.naoiphpack.naoiphmapleleaf.desc": "Maple Leaf Rag",
+      "entity.naoiphpack.naoiphdealer": "Dealer",
+      "biome.naoiphpack.oilocean": "Oil Ocean",
+      "item.naoiphpack.seagull": "Seagull Spawn Egg",
+      "item.minecraft.lingering_potion.effect.toxin": "Lingering Toxin",
+      "block.naoiphpack.slatebrick": "Slate Brick",
+      "item.naoiphpack.naoiphashitem": "Ash",
+      "item.naoiphpack.jimmybody": "Child Body",
+      "item.naoiphpack.smokegrassseeds": "Smokegrass Seeds",
+      "advancements.veryhigh.title": "Very High",
+      "block.naoiphpack.baptismfont": "Baptism Font",
+      "item.naoiphpack.redquartzarmourboots": "Redquartz Boots",
+      "item.naoiphpack.smokegrass": "Smokegrass",
+      "item.naoiphpack.redquartz": "Redquartz",
+      "item.naoiphpack.redquartzarmourhelmet": "Redquartz Helmet",
+      "item.naoiphpack.boss": "Boss Spawn Egg",
+      "item.minecraft.splash_potion.effect.toxin": "Splash Toxin",
+      "block.naoiphpack.naoiphash": "Ash",
+      "advancements.veryhigh.descr": "Oh no",
+      "item.naoiphpack.jimmy": "Child",
+      "effect.toxin": "Toxin",
+      "block.naoiphpack.slatebrickslab": "Slate Brick Slab",
+      "item.naoiphpack.plasmablade": "Plasma Blade",
+      "itemGroup.tabnaoiphpack": "Naoiph Pack",
+      "item.naoiphpack.naoiphdealer": "Dealer Spawn Egg",
+      "biome.naoiphpack.naoiphmaple": "Maple Biome",
+      "item.naoiphpack.driedflower": "Dried Smokegrass Flower",
+      "item.naoiphpack.syringe": "Syringe",
+      "item.minecraft.potion.effect.toxin": "Toxin",
+      "fluid.oil": "Oil",
+      "item.naoiphpack.oil_bucket": "Oil Bucket",
+      "entity.naoiphpack.seagull": "Seagull",
+      "biome.naoiphpack.naoiphslatebiome": "Slate Biome",
+      "entity.naoiphpack.boss": "Boss",
+      "block.naoiphpack.naoiphsmokingash": "Smoking Ash",
+      "block.naoiphpack.redquartzore": "Redquartz Ore",
+      "item.naoiphpack.naoiphmapleleaf": "Music Disc",
+      "item.naoiphpack.jimmyhead": "Child Head",
+      "block.naoiphpack.naoiphredblock": "Blood Grass",
+      "item.naoiphpack.smokegrassflower": "Smokegrass Flower",
+      "item.naoiphpack.filledsyringe": "Filled Syringe"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "naoiphpack",
+    "modName": "NaoiphPack",
+    "version": "1.0.0",
+    "author": "Naoiph, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "1.14.4",
+    "modElementsPackage": "net.mcreator.naoiphpack",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000214217
+}

@@ -1,0 +1,68 @@
+{
+  "_fv": 6,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "SACRAFICE",
+          "onClick": {
+            "name": "SacraficeProcedure"
+          },
+          "width": 180,
+          "height": 40,
+          "name": "SACRAFICE",
+          "x": 340,
+          "y": 125
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:Jimmy"
+          },
+          "id": 0,
+          "name": "Slot #0",
+          "x": 295,
+          "y": 125
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "name": "Slot #1",
+          "x": 531,
+          "y": 126
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "name": "Slot #2",
+          "x": 383,
+          "y": 173
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "name": "Slot #3",
+          "x": 431,
+          "y": 173
+        }
+      }
+    ]
+  }
+}

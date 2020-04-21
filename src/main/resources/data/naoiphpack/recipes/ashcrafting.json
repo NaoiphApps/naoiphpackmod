@@ -1,0 +1,22 @@
+{
+  "group": "naoiphpack",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "naoiphpack:naoiphashitem"
+    },
+    {
+      "item": "naoiphpack:naoiphashitem"
+    },
+    {
+      "item": "naoiphpack:naoiphashitem"
+    },
+    {
+      "item": "naoiphpack:naoiphashitem"
+    }
+  ],
+  "result": {
+    "item": "naoiphpack:naoiphash",
+    "count": 1
+  }
+}

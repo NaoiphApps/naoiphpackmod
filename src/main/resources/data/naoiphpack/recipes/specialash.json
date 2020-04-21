@@ -1,0 +1,16 @@
+{
+  "group": "naoiphpack",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:emerald"
+    },
+    {
+      "item": "naoiphpack:naoiphashitem"
+    }
+  ],
+  "result": {
+    "item": "naoiphpack:naoiphashdimension",
+    "count": 1
+  }
+}

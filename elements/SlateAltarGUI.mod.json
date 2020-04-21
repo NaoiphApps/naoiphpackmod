@@ -1,0 +1,72 @@
+{
+  "_fv": 6,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Insert Redquartz",
+          "color": {
+            "value": -6750208,
+            "falpha": 0.0
+          },
+          "name": "Insert Redquartz",
+          "x": 345,
+          "y": 90
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:Redquartz"
+          },
+          "id": 1,
+          "name": "Slot #1",
+          "x": 365,
+          "y": 125
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "name": "Slot #2",
+          "x": 409,
+          "y": 198
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:FilledSyringe"
+          },
+          "id": 0,
+          "name": "Slot #0",
+          "x": 458,
+          "y": 124
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "start",
+          "onClick": {
+            "name": "SlatealterGUIProcedure"
+          },
+          "width": 100,
+          "height": 40,
+          "name": "start",
+          "x": 281,
+          "y": 176
+        }
+      }
+    ]
+  }
+}

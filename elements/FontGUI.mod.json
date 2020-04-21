@@ -1,0 +1,39 @@
+{
+  "_fv": 6,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Font",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Font",
+          "x": 394,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Baptise",
+          "onClick": {
+            "name": "Baptism"
+          },
+          "width": 140,
+          "height": 40,
+          "name": "Baptise",
+          "x": 353,
+          "y": 336
+        }
+      }
+    ]
+  }
+}

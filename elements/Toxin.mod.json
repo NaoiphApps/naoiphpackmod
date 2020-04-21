@@ -1,0 +1,29 @@
+{
+  "_fv": 6,
+  "_type": "potion",
+  "definition": {
+    "name": "Toxin",
+    "effectName": "Toxin",
+    "icon": "oxin.png",
+    "color": {
+      "value": -16751053,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "registerPotionType": true,
+    "curativeItems": [],
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": false,
+    "onStarted": {
+      "name": "ToxinPotionStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "ToxinOnPotionActiveTick"
+    },
+    "onExpired": {
+      "name": "ToxinPotionExpires"
+    }
+  }
+}

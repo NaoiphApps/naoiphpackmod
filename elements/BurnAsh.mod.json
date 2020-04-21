@@ -1,0 +1,19 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 1.0,
+    "recipeRetstackSize": 6,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "Blocks.LOG"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:NaoiphAshItem"
+    },
+    "name": "burnash",
+    "namespace": "mod"
+  }
+}

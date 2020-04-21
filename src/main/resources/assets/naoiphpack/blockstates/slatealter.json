@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "naoiphpack:block/slatealter"
+    },
+    "facing=east": {
+      "model": "naoiphpack:block/slatealter",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "naoiphpack:block/slatealter",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "naoiphpack:block/slatealter",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_fv": 6,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "lowerea",
+    "customModelName": "Normal",
+    "name": "Smokegrass Flower Tea",
+    "creativeTab": {
+      "value": "CUSTOM:NaoiphPack"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 2,
+    "saturation": 0.3,
+    "eatingSpeed": 32,
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "drink",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "FlowerEffects"
+    }
+  }
+}

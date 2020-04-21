@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "naoiphpack:block/slatebrickslab"
+    },
+    "type=top": {
+      "model": "naoiphpack:block/slatebrickslab_top"
+    },
+    "type=double": {
+      "model": "naoiphpack:block/slatebrickslab_full"
+    }
+  }
+}

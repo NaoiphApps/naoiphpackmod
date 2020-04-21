@@ -1,0 +1,66 @@
+{
+  "_fv": 6,
+  "_type": "biome",
+  "definition": {
+    "name": "Oil Ocean",
+    "groundBlock": {
+      "value": "CUSTOM:Oil"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.GLOWSTONE"
+    },
+    "generateLakes": false,
+    "treeType": 0,
+    "vanillaTreeType": "Default",
+    "minHeight": 7,
+    "spawnVines": false,
+    "treeVines": {
+      "value": ""
+    },
+    "treeStem": {
+      "value": ""
+    },
+    "treeBranch": {
+      "value": ""
+    },
+    "treeFruits": {
+      "value": ""
+    },
+    "customColors": true,
+    "airColor": {
+      "value": -13434829,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -6750208,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -10092544,
+      "falpha": 0.0
+    },
+    "treesPerChunk": 0,
+    "grassPerChunk": 0,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPathcesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "deadBushesPerChunk": 0,
+    "rainingPossibility": 0.5,
+    "temperature": 0.5,
+    "baseHeight": 0.09999999999999999,
+    "heightVariation": 0.0,
+    "spawnBiome": false,
+    "biomeWeight": 10,
+    "biomeType": "WARM",
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "ocean"
+    },
+    "biomeDictionaryTypes": [],
+    "spawnList": []
+  }
+}

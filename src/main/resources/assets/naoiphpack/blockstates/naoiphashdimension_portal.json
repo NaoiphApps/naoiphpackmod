@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "naoiphpack:block/naoiphashdimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "naoiphpack:block/naoiphashdimension_portal_ns"
+    }
+  }
+}

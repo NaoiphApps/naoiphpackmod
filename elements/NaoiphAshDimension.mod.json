@@ -1,0 +1,65 @@
+{
+  "_fv": 6,
+  "_type": "dimension",
+  "definition": {
+    "portalFrame": {
+      "value": "CUSTOM:NaoiphSlate"
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 0.09999999999999999,
+    "portalSound": {
+      "value": "record.stal"
+    },
+    "igniterName": "Special Ash",
+    "igniterTab": {
+      "value": "CUSTOM:NaoiphPack"
+    },
+    "texture": "sh",
+    "portalTexture": "ash",
+    "enablePortal": true,
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:NaoiphSlateBiome"
+      },
+      {
+        "value": "CUSTOM:NaoiphAshBiome"
+      },
+      {
+        "value": "CUSTOM:NaoiphMaple"
+      },
+      {
+        "value": "CUSTOM:OilOcean"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:NaoiphSlate"
+    },
+    "secondaryFillerBlock": {
+      "value": "CUSTOM:NaoiphAsh"
+    },
+    "tertiaryFillerBlock": {
+      "value": ""
+    },
+    "fluidBlock": {
+      "value": "CUSTOM:Oil"
+    },
+    "airColor": {
+      "value": -26317,
+      "falpha": 0.0
+    },
+    "canRespawnHere": false,
+    "hasFog": true,
+    "hasWeather": true,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "BED_EXPLODES",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": false,
+    "dimensionMusic": {
+      "value": "record.stal"
+    }
+  }
+}

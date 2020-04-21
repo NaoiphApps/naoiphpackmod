@@ -1,0 +1,17 @@
+{
+  "_fv": 6,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "mapleleaf",
+    "name": "Music Disc",
+    "description": "Maple Leaf Rag",
+    "creativeTab": {
+      "value": "CUSTOM:NaoiphPack"
+    },
+    "music": {
+      "value": "CUSTOM:mapleleaf"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

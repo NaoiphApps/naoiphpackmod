@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "naoiphpack:block/sacraficealtar"
+    },
+    "facing=east": {
+      "model": "naoiphpack:block/sacraficealtar",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "naoiphpack:block/sacraficealtar",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "naoiphpack:block/sacraficealtar",
+      "y": 270
+    }
+  }
+}

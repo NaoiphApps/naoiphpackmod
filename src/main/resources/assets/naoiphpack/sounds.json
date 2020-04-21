@@ -1,0 +1,11 @@
+{
+  "mapleleaf": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "naoiphpack:aple-eaf-ag-rthur-iedler-and-the-oston-ops",
+        "stream": true
+      }
+    ]
+  }
+}

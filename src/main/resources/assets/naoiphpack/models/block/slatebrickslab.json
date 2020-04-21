@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "naoiphpack:blocks/slatebrick",
+    "top": "naoiphpack:blocks/slatebrick",
+    "side": "naoiphpack:blocks/slatebrick"
+  }
+}
