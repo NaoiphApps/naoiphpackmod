@@ -934,6 +934,14 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "UhOhAdvancement",
+      "type": "achievement",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [
@@ -982,10 +990,12 @@
       "item.naoiphpack.redquartz": "Redquartz",
       "item.naoiphpack.redquartzarmourhelmet": "Redquartz Helmet",
       "item.naoiphpack.boss": "Boss Spawn Egg",
+      "advancements.uhohadvancement.descr": "why did you kill Jimmy??",
       "item.minecraft.splash_potion.effect.toxin": "Splash Toxin",
       "block.naoiphpack.naoiphash": "Ash",
       "advancements.veryhigh.descr": "Oh no",
       "item.naoiphpack.jimmy": "Child",
+      "advancements.uhohadvancement.title": "Oh No",
       "effect.toxin": "Toxin",
       "block.naoiphpack.slatebrickslab": "Slate Brick Slab",
       "item.naoiphpack.plasmablade": "Plasma Blade",

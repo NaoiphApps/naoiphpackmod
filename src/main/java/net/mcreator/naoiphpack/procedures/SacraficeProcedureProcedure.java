@@ -5,6 +5,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraft.world.World;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.inventory.container.Slot;
@@ -12,6 +13,8 @@ import net.minecraft.inventory.container.Container;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
 
 import net.mcreator.naoiphpack.item.JimmyItem;
 import net.mcreator.naoiphpack.item.JimmyHeadItem;
@@ -21,6 +24,7 @@ import net.mcreator.naoiphpack.NaoiphPackElements;
 
 import java.util.function.Supplier;
 import java.util.Map;
+import java.util.Iterator;
 
 @NaoiphPackElements.ModElement.Tag
 public class SacraficeProcedureProcedure extends NaoiphPackElements.ModElement {
@@ -154,6 +158,18 @@ public class SacraficeProcedureProcedure extends NaoiphPackElements.ModElement {
 						_setstack.setCount(1);
 						((Slot) ((Map) invobj).get((int) (3))).putStack(_setstack);
 						_current.detectAndSendChanges();
+					}
+				}
+			}
+			if (entity instanceof ServerPlayerEntity) {
+				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+						.getAdvancement(new ResourceLocation("naoiphpack:uhohadvancement"));
+				AdvancementProgress _ap = ((ServerPlayerEntity) entity).getAdvancements().getProgress(_adv);
+				if (!_ap.isDone()) {
+					Iterator _iterator = _ap.getRemaningCriteria().iterator();
+					while (_iterator.hasNext()) {
+						String _criterion = (String) _iterator.next();
+						((ServerPlayerEntity) entity).getAdvancements().grantCriterion(_adv, _criterion);
 					}
 				}
 			}
