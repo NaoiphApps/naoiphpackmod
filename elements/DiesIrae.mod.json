@@ -1,0 +1,17 @@
+{
+  "_fv": 6,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "diesirae",
+    "name": "Music Disc",
+    "description": "Dies Irae",
+    "creativeTab": {
+      "value": "CUSTOM:NaoiphPack"
+    },
+    "music": {
+      "value": "CUSTOM:deisirae"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

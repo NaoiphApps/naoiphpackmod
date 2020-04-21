@@ -7,5 +7,14 @@
         "stream": true
       }
     ]
+  },
+  "deisirae": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "naoiphpack:regorian_hant_-_ies_rae",
+        "stream": false
+      }
+    ]
   }
 }

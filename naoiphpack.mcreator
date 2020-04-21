@@ -950,6 +950,14 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "DiesIrae",
+      "type": "musicdisc",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [
@@ -965,22 +973,29 @@
       "name": "mapleleaf",
       "file": "aple-eaf-ag-rthur-iedler-and-the-oston-ops",
       "category": "music"
+    },
+    {
+      "name": "deisirae",
+      "file": "regorian_hant_-_ies_rae",
+      "category": "master"
     }
   ],
   "language_map": {
     "en_us": {
       "block.naoiphpack.slatealter": "Slate Altar",
-      "item.minecraft.tipped_arrow.effect.toxin": "Arrow of Toxin",
       "block.naoiphpack.slatebrickstairs": "Slate Brick Stairs",
+      "item.minecraft.tipped_arrow.effect.toxin": "Arrow of Toxin",
       "block.naoiphpack.smokegrassplant": "Smokegrass Plant",
-      "item.naoiphpack.unrefinedredquartz": "Unrefined Redquartz",
       "block.naoiphpack.slate": "Slate",
+      "item.naoiphpack.unrefinedredquartz": "Unrefined Redquartz",
       "item.naoiphpack.naoiphgrassdrug": "Grass Drug",
+      "item.naoiphpack.diesirae": "Music Disc",
       "item.naoiphpack.flowertea": "Smokegrass Flower Tea",
-      "biome.naoiphpack.naoiphashbiome": "Ash Biome",
       "block.naoiphpack.sacraficealtar": "Sacrafice Altar",
-      "item.naoiphpack.naoiphashdimension": "Special Ash",
+      "biome.naoiphpack.naoiphashbiome": "Ash Biome",
       "item.naoiphpack.redquartzarmourlegs": "Redquartz Leggings",
+      "item.naoiphpack.naoiphashdimension": "Special Ash",
+      "item.naoiphpack.diesirae.desc": "Dies Irae",
       "entity.naoiphpack.timmytime": "Timmy",
       "item.naoiphpack.redquartzarmourbody": "Redquartz Body",
       "item.naoiphpack.naoiphmapleleaf.desc": "Maple Leaf Rag",

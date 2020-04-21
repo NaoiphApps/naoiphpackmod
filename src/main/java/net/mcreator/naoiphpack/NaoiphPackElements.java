@@ -50,6 +50,7 @@ public class NaoiphPackElements {
 	public NaoiphPackElements() {
 		sounds.put(new ResourceLocation("naoiphpack", "mapleleaf"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("naoiphpack", "mapleleaf")));
+		sounds.put(new ResourceLocation("naoiphpack", "deisirae"), new net.minecraft.util.SoundEvent(new ResourceLocation("naoiphpack", "deisirae")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("naoiphpack").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();
