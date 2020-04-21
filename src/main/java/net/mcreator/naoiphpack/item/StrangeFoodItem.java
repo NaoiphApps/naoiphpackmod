@@ -29,7 +29,7 @@ public class StrangeFoodItem extends NaoiphPackElements.ModElement {
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
 			super(new Item.Properties().group(NaoiphPackItemGroup.tab).maxStackSize(64)
-					.food((new Food.Builder()).hunger(8).saturation(0.3f).build()));
+					.food((new Food.Builder()).hunger(8).saturation(0.3f).setAlwaysEdible().meat().build()));
 			setRegistryName("strangefood");
 		}
 

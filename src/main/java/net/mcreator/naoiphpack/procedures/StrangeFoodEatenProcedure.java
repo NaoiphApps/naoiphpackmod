@@ -39,6 +39,6 @@ public class StrangeFoodEatenProcedure extends NaoiphPackElements.ModElement {
 			}
 		}
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.NAUSEA, (int) 120, (int) 244));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.NAUSEA, (int) 620, (int) 244));
 	}
 }
