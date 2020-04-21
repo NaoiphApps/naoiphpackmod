@@ -1030,10 +1030,10 @@
   ],
   "language_map": {
     "en_us": {
-      "block.naoiphpack.slatealter": "Slate Altar",
       "entity.naoiphpack.sprinter": "Sprinter",
-      "item.minecraft.tipped_arrow.effect.toxin": "Arrow of Toxin",
+      "block.naoiphpack.slatealter": "Slate Altar",
       "block.naoiphpack.slatebrickstairs": "Slate Brick Stairs",
+      "item.minecraft.tipped_arrow.effect.toxin": "Arrow of Toxin",
       "block.naoiphpack.smokegrassplant": "Smokegrass Plant",
       "item.naoiphpack.unrefinedredquartz": "Unrefined Redquartz",
       "block.naoiphpack.slate": "Slate",
@@ -1043,8 +1043,8 @@
       "block.naoiphpack.sacraficealtar": "Sacrafice Altar",
       "biome.naoiphpack.naoiphashbiome": "Ash Biome",
       "item.naoiphpack.strangefood": "Brick of Strange Food",
-      "item.naoiphpack.naoiphashdimension": "Special Ash",
       "item.naoiphpack.redquartzarmourlegs": "Redquartz Leggings",
+      "item.naoiphpack.naoiphashdimension": "Special Ash",
       "item.naoiphpack.diesirae.desc": "Dies Irae",
       "entity.naoiphpack.timmytime": "Timmy",
       "item.naoiphpack.redquartzarmourbody": "Redquartz Body",
