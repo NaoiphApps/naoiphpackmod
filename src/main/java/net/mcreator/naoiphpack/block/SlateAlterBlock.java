@@ -39,7 +39,6 @@ import net.minecraft.block.Block;
 
 import net.mcreator.naoiphpack.procedures.SlateAlterPlayerStartsToDestroyProcedure;
 import net.mcreator.naoiphpack.itemgroup.NaoiphPackItemGroup;
-import net.mcreator.naoiphpack.item.NaoiphAshDimensionItem;
 import net.mcreator.naoiphpack.gui.SlateAltarGUIGui;
 import net.mcreator.naoiphpack.NaoiphPackElements;
 
@@ -94,7 +93,7 @@ public class SlateAlterBlock extends NaoiphPackElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(NaoiphAshDimensionItem.block, (int) (18)));
+			return Collections.singletonList(new ItemStack(this, 18));
 		}
 
 		@OnlyIn(Dist.CLIENT)

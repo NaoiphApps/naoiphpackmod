@@ -15,7 +15,7 @@
     "toolType": 1.0,
     "damageCount": 0,
     "destroyAnyBlock": false,
-    "stayInGridWhenCrafting": false,
+    "stayInGridWhenCrafting": true,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [],

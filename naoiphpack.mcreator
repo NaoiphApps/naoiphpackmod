@@ -958,6 +958,38 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "StrangeFoodEaten",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StrangeFood",
+      "type": "food",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Eatchild",
+      "type": "achievement",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [
@@ -993,6 +1025,7 @@
       "item.naoiphpack.flowertea": "Smokegrass Flower Tea",
       "block.naoiphpack.sacraficealtar": "Sacrafice Altar",
       "biome.naoiphpack.naoiphashbiome": "Ash Biome",
+      "item.naoiphpack.strangefood": "Brick of Strange Food",
       "item.naoiphpack.redquartzarmourlegs": "Redquartz Leggings",
       "item.naoiphpack.naoiphashdimension": "Special Ash",
       "item.naoiphpack.diesirae.desc": "Dies Irae",
@@ -1009,6 +1042,7 @@
       "item.naoiphpack.smokegrassseeds": "Smokegrass Seeds",
       "advancements.veryhigh.title": "Very High",
       "block.naoiphpack.baptismfont": "Baptism Font",
+      "advancements.eatchild.descr": "Why did you eat that strange meal?",
       "item.naoiphpack.redquartzarmourboots": "Redquartz Boots",
       "item.naoiphpack.smokegrass": "Smokegrass",
       "item.naoiphpack.redquartz": "Redquartz",
@@ -1035,6 +1069,7 @@
       "entity.naoiphpack.seagull": "Seagull",
       "biome.naoiphpack.naoiphslatebiome": "Slate Biome",
       "entity.naoiphpack.boss": "Boss",
+      "advancements.eatchild.title": "I think you just ate a child",
       "block.naoiphpack.naoiphsmokingash": "Smoking Ash",
       "block.naoiphpack.redquartzore": "Redquartz Ore",
       "item.naoiphpack.naoiphmapleleaf": "Music Disc",

@@ -9,7 +9,7 @@
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
-    "spawnHeightOffset": 3,
+    "spawnHeightOffset": 1,
     "spawnWorldTypes": [
       "CUSTOM:NaoiphAshDimension"
     ],

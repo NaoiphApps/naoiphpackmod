@@ -78,6 +78,33 @@ public class SlatealterGUIProcedureProcedure extends NaoiphPackElements.ModEleme
 				return ItemStack.EMPTY;
 			}
 		}.getItemStack((int) (0))).getItem() == new ItemStack(FilledSyringeItem.block, (int) (1)).getItem()))) {
+			if (entity instanceof PlayerEntity) {
+				Container _current = ((PlayerEntity) entity).openContainer;
+				if (_current instanceof Supplier) {
+					Object invobj = ((Supplier) _current).get();
+					if (invobj instanceof Map) {
+						ItemStack _setstack = new ItemStack(Items.DIAMOND, (int) (1));
+						_setstack.setCount((3 * (new Object() {
+							public int getAmount(int sltid) {
+								if (entity instanceof ServerPlayerEntity) {
+									Container _current = ((ServerPlayerEntity) entity).openContainer;
+									if (_current instanceof Supplier) {
+										Object invobj = ((Supplier) _current).get();
+										if (invobj instanceof Map) {
+											ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
+											if (stack != null)
+												return stack.getCount();
+										}
+									}
+								}
+								return 0;
+							}
+						}.getAmount((int) (1)))));
+						((Slot) ((Map) invobj).get((int) (2))).putStack(_setstack);
+						_current.detectAndSendChanges();
+					}
+				}
+			}
 			for (int _ct = 0; _ct < 20; _ct++) {
 				world.addOptionalParticle(ParticleTypes.LARGE_SMOKE, x, y, z, 3, 3, 3);
 			}
@@ -109,33 +136,6 @@ public class SlatealterGUIProcedureProcedure extends NaoiphPackElements.ModEleme
 						ItemStack _setstack = new ItemStack(SyringeItem.block, (int) (1));
 						_setstack.setCount(1);
 						((Slot) ((Map) invobj).get((int) (0))).putStack(_setstack);
-						_current.detectAndSendChanges();
-					}
-				}
-			}
-			if (entity instanceof PlayerEntity) {
-				Container _current = ((PlayerEntity) entity).openContainer;
-				if (_current instanceof Supplier) {
-					Object invobj = ((Supplier) _current).get();
-					if (invobj instanceof Map) {
-						ItemStack _setstack = new ItemStack(Items.DIAMOND, (int) (1));
-						_setstack.setCount((3 * (new Object() {
-							public int getAmount(int sltid) {
-								if (entity instanceof ServerPlayerEntity) {
-									Container _current = ((ServerPlayerEntity) entity).openContainer;
-									if (_current instanceof Supplier) {
-										Object invobj = ((Supplier) _current).get();
-										if (invobj instanceof Map) {
-											ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
-											if (stack != null)
-												return stack.getCount();
-										}
-									}
-								}
-								return 0;
-							}
-						}.getAmount((int) (1)))));
-						((Slot) ((Map) invobj).get((int) (2))).putStack(_setstack);
 						_current.detectAndSendChanges();
 					}
 				}
