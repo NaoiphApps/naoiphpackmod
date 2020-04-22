@@ -1127,6 +1127,62 @@
         "eb": false,
         "ec": false
       }
+    },
+    {
+      "name": "RedquartzShotgun",
+      "type": "gun",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "RedquartzShotgunRecipe",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Slatebrickrecipe",
+      "type": "recipe",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Slatestairrecipe",
+      "type": "recipe",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Slateslabrecipe",
+      "type": "recipe",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Slateiron",
+      "type": "block",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "RedquartzAssaultRifle",
+      "type": "gun",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [
@@ -1178,6 +1234,7 @@
       "item.naoiphpack.diesirae.desc": "Dies Irae",
       "item.naoiphpack.mitrelegs": "Mitre Leggings",
       "entity.naoiphpack.timmytime": "Timmy",
+      "item.naoiphpack.redquartzassaultrifle": "Redquartz Assault Rifle",
       "item.naoiphpack.redquartzarmourbody": "Redquartz Body",
       "item.naoiphpack.naoiphmapleleaf.desc": "Maple Leaf Rag",
       "entity.naoiphpack.naoiphdealer": "Dealer",
@@ -1205,6 +1262,7 @@
       "block.naoiphpack.naoiphash": "Ash",
       "item.naoiphpack.mitrehelmet": "Mitre",
       "item.naoiphpack.mitreboots": "Mitre Boots",
+      "block.naoiphpack.slateiron": "Slate Iron Ore",
       "advancements.veryhigh.descr": "Oh no",
       "item.naoiphpack.jimmy": "Child",
       "item.naoiphpack.rawbeastmeat": "Raw Beast Meat",
@@ -1228,6 +1286,7 @@
       "entity.naoiphpack.boss": "Boss",
       "advancements.eatchild.title": "I think you just ate a child",
       "block.naoiphpack.naoiphsmokingash": "Smoking Ash",
+      "item.naoiphpack.redquartzshotgun": "Redquartz Shotgun",
       "block.naoiphpack.redquartzore": "Redquartz Ore",
       "item.naoiphpack.naoiphmapleleaf": "Music Disc",
       "item.naoiphpack.jimmyhead": "Child Head",

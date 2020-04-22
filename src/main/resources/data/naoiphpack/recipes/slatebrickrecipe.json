@@ -1,0 +1,26 @@
+{
+  "group": "naoiphpack",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "naoiphpack:slate"
+    },
+    "1": {
+      "item": "naoiphpack:slate"
+    },
+    "2": {
+      "item": "naoiphpack:slate"
+    },
+    "3": {
+      "item": "naoiphpack:slate"
+    }
+  },
+  "result": {
+    "item": "naoiphpack:slatebrick",
+    "count": 1
+  }
+}

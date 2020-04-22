@@ -1,0 +1,26 @@
+{
+  "group": "naoiphpack",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3  "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_ingot"
+    },
+    "1": {
+      "item": "naoiphpack:unrefinedredquartz"
+    },
+    "2": {
+      "item": "minecraft:iron_ingot"
+    },
+    "3": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "naoiphpack:redquartzshotgun",
+    "count": 1
+  }
+}

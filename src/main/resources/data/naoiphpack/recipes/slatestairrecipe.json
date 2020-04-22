@@ -1,0 +1,33 @@
+{
+  "group": "naoiphpack",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "naoiphpack:slatebrick"
+    },
+    "3": {
+      "item": "naoiphpack:slatebrick"
+    },
+    "4": {
+      "item": "naoiphpack:slatebrick"
+    },
+    "6": {
+      "item": "naoiphpack:slatebrick"
+    },
+    "7": {
+      "item": "naoiphpack:slatebrick"
+    },
+    "8": {
+      "item": "naoiphpack:slatebrick"
+    }
+  },
+  "result": {
+    "item": "naoiphpack:slatebrickstairs",
+    "count": 1
+  }
+}

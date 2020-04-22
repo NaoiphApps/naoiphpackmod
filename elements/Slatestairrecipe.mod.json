@@ -1,0 +1,45 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SlateBrick"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SlateBrick"
+      },
+      {
+        "value": "CUSTOM:SlateBrick"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SlateBrick"
+      },
+      {
+        "value": "CUSTOM:SlateBrick"
+      },
+      {
+        "value": "CUSTOM:SlateBrick"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SlateBrickStairs"
+    },
+    "name": "slatestairrecipe",
+    "namespace": "mod"
+  }
+}
