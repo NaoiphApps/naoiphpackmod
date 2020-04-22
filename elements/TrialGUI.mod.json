@@ -1,0 +1,72 @@
+{
+  "_fv": 6,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "judge",
+          "width": 100,
+          "height": 40,
+          "name": "judge",
+          "x": 372,
+          "y": 140
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "name": "Slot #0",
+          "x": 273,
+          "y": 95
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "destroy",
+          "width": 140,
+          "height": 40,
+          "name": "destroy",
+          "x": 353,
+          "y": 185
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "This Jimmy is...",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "This Jimmy is...",
+          "x": 315,
+          "y": 100
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "press judge",
+          "color": {
+            "value": -10092544,
+            "falpha": 0.0
+          },
+          "name": "press judge",
+          "x": 483,
+          "y": 98
+        }
+      }
+    ]
+  }
+}

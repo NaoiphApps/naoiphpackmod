@@ -1,0 +1,22 @@
+{
+  "group": "naoiphpack",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "naoiphpack:smokegrass"
+    },
+    "1": {
+      "tag": "jimmytag"
+    },
+    "2": {
+      "item": "naoiphpack:smokegrass"
+    }
+  },
+  "result": {
+    "item": "naoiphpack:strangefood",
+    "count": 1
+  }
+}

@@ -1006,6 +1006,46 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "JimmyTag",
+      "type": "tag",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "JimmyFood",
+      "type": "recipe",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrialBlock",
+      "type": "block",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrialGUI",
+      "type": "gui",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "OldSupercomputer",
+      "type": "block",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [
@@ -1030,10 +1070,10 @@
   ],
   "language_map": {
     "en_us": {
-      "entity.naoiphpack.sprinter": "Sprinter",
       "block.naoiphpack.slatealter": "Slate Altar",
-      "block.naoiphpack.slatebrickstairs": "Slate Brick Stairs",
+      "entity.naoiphpack.sprinter": "Sprinter",
       "item.minecraft.tipped_arrow.effect.toxin": "Arrow of Toxin",
+      "block.naoiphpack.slatebrickstairs": "Slate Brick Stairs",
       "block.naoiphpack.smokegrassplant": "Smokegrass Plant",
       "item.naoiphpack.unrefinedredquartz": "Unrefined Redquartz",
       "block.naoiphpack.slate": "Slate",
@@ -1043,8 +1083,8 @@
       "block.naoiphpack.sacraficealtar": "Sacrafice Altar",
       "biome.naoiphpack.naoiphashbiome": "Ash Biome",
       "item.naoiphpack.strangefood": "Brick of Strange Food",
-      "item.naoiphpack.redquartzarmourlegs": "Redquartz Leggings",
       "item.naoiphpack.naoiphashdimension": "Special Ash",
+      "item.naoiphpack.redquartzarmourlegs": "Redquartz Leggings",
       "item.naoiphpack.diesirae.desc": "Dies Irae",
       "entity.naoiphpack.timmytime": "Timmy",
       "item.naoiphpack.redquartzarmourbody": "Redquartz Body",
@@ -1065,6 +1105,7 @@
       "item.naoiphpack.smokegrass": "Smokegrass",
       "item.naoiphpack.redquartz": "Redquartz",
       "item.naoiphpack.redquartzarmourhelmet": "Redquartz Helmet",
+      "block.naoiphpack.trialblock": "Trial Block",
       "item.naoiphpack.boss": "Boss Spawn Egg",
       "advancements.uhohadvancement.descr": "why did you kill Jimmy??",
       "item.minecraft.splash_potion.effect.toxin": "Splash Toxin",
@@ -1084,6 +1125,7 @@
       "item.minecraft.potion.effect.toxin": "Toxin",
       "fluid.oil": "Oil",
       "item.naoiphpack.oil_bucket": "Oil Bucket",
+      "block.naoiphpack.oldsupercomputer": "Old Supercomputer",
       "entity.naoiphpack.seagull": "Seagull",
       "biome.naoiphpack.naoiphslatebiome": "Slate Biome",
       "entity.naoiphpack.boss": "Boss",

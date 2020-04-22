@@ -1,0 +1,22 @@
+{
+  "_fv": 6,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:JimmyHead"
+      },
+      {
+        "value": "CUSTOM:JimmyBody"
+      },
+      {
+        "value": "CUSTOM:Jimmy"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "jimmytag",
+    "namespace": "minecraft"
+  }
+}

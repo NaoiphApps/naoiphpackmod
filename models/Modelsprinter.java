@@ -17,39 +17,39 @@ public static class Modelsprinter extends ModelBase {
 
 		rightleg = new ModelRenderer(this);
 		rightleg.setRotationPoint(-4.5F, 25.0F, 0.5F);
-		rightleg.cubeList.add(new ModelBox(rightleg, 12, 12, -0.5F, 1.0F, -0.5F, 1, 10, 1, 1.0F, false));
+		rightleg.cubeList.add(new ModelBox(rightleg, 12, 12, -0.5F, -12.0F, -0.5F, 1, 10, 1, 1.0F, false));
 
 		leftleg = new ModelRenderer(this);
 		leftleg.setRotationPoint(3.5F, 25.0F, 0.5F);
-		leftleg.cubeList.add(new ModelBox(leftleg, 8, 8, -0.5F, 1.0F, -0.5F, 1, 10, 1, 1.0F, false));
+		leftleg.cubeList.add(new ModelBox(leftleg, 8, 8, -0.5F, -12.0F, -0.5F, 1, 10, 1, 1.0F, false));
 
 		head = new ModelRenderer(this);
 		head.setRotationPoint(-0.3F, 16.1F, -6.7F);
-		head.cubeList.add(new ModelBox(head, 16, 16, -0.7F, -0.1F, -2.3F, 1, 1, 1, 3.0F, false));
-		head.cubeList.add(new ModelBox(head, 12, 10, -2.7F, -1.1F, -6.3F, 2, 1, 1, 0.0F, false));
-		head.cubeList.add(new ModelBox(head, 12, 8, 0.3F, -1.1F, -6.3F, 2, 1, 1, 0.0F, false));
+		head.cubeList.add(new ModelBox(head, 16, 16, -0.7F, -13.1F, -2.3F, 1, 1, 1, 3.0F, false));
+		head.cubeList.add(new ModelBox(head, 12, 10, -2.7F, -14.1F, -6.3F, 2, 1, 1, 0.0F, false));
+		head.cubeList.add(new ModelBox(head, 12, 8, 0.3F, -14.1F, -6.3F, 2, 1, 1, 0.0F, false));
 
 		horn = new ModelRenderer(this);
 		horn.setRotationPoint(-2.2F, -2.6F, -1.8F);
 		setRotationAngle(horn, 0.0F, 0.0F, -0.4363F);
 		head.addChild(horn);
-		horn.cubeList.add(new ModelBox(horn, 12, 0, -0.5F, -3.5F, -0.5F, 1, 7, 1, 0.0F, false));
+		horn.cubeList.add(new ModelBox(horn, 12, 0, 4.9937F, -15.2822F, -0.5F, 1, 7, 1, 0.0F, false));
 
 		horn2 = new ModelRenderer(this);
 		horn2.setRotationPoint(1.8F, -2.6F, -1.8F);
 		setRotationAngle(horn2, 0.0F, 0.0F, 0.4363F);
 		head.addChild(horn2);
-		horn2.cubeList.add(new ModelBox(horn2, 8, 0, -0.5F, -3.5F, -0.5F, 1, 7, 1, 0.0F, false));
+		horn2.cubeList.add(new ModelBox(horn2, 8, 0, -5.9937F, -15.2822F, -0.5F, 1, 7, 1, 0.0F, false));
 
 		torso = new ModelRenderer(this);
 		torso.setRotationPoint(0.0F, 24.0F, 0.0F);
-		torso.cubeList.add(new ModelBox(torso, 16, 0, -1.0F, -6.0F, 0.0F, 1, 1, 1, 6.0F, false));
+		torso.cubeList.add(new ModelBox(torso, 16, 0, -1.0F, -19.0F, 0.0F, 1, 1, 1, 6.0F, false));
 
 		tail = new ModelRenderer(this);
 		tail.setRotationPoint(-1.0F, -7.5F, 10.0F);
 		setRotationAngle(tail, -1.2217F, 0.0F, 0.0F);
 		torso.addChild(tail);
-		tail.cubeList.add(new ModelBox(tail, 0, 0, -1.0F, -7.5F, -1.0F, 2, 15, 2, 0.0F, false));
+		tail.cubeList.add(new ModelBox(tail, 0, 0, -1.0F, -11.6046F, -12.2762F, 2, 15, 2, 0.0F, false));
 	}
 
 	@Override

@@ -1,0 +1,8 @@
+{
+  "parent": "naoiphpack:custom/supercomputermodel",
+  "textures": {
+    "all": "naoiphpack:blocks/computertexture",
+    "particle": "naoiphpack:blocks/computertexture",
+    "0": "naoiphpack:blocks/computertexture"
+  }
+}

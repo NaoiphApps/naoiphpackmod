@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "naoiphpack:block/oldsupercomputer"
+    },
+    "facing=east": {
+      "model": "naoiphpack:block/oldsupercomputer",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "naoiphpack:block/oldsupercomputer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "naoiphpack:block/oldsupercomputer",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "naoiphpack:block/oldsupercomputer",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "naoiphpack:block/oldsupercomputer",
+      "x": 90
+    }
+  }
+}
