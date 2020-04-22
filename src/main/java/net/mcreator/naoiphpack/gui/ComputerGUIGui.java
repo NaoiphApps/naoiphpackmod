@@ -27,11 +27,11 @@ import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.gui.widget.button.Button;
-import net.minecraft.client.gui.widget.TextFieldWidget;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.naoiphpack.item.EmptyDiscItem;
 import net.mcreator.naoiphpack.NaoiphPackElements;
 import net.mcreator.naoiphpack.NaoiphPack;
 
@@ -78,7 +78,7 @@ public class ComputerGUIGui extends NaoiphPackElements.ModElement {
 			super(containerType, id);
 			this.entity = inv.player;
 			this.world = inv.player.world;
-			this.internal = new Inventory(1);
+			this.internal = new Inventory(4);
 			if (extraData != null) {
 				BlockPos pos = extraData.readBlockPos();
 				this.x = pos.getX();
@@ -89,15 +89,27 @@ public class ComputerGUIGui extends NaoiphPackElements.ModElement {
 					this.internal = (IInventory) ent;
 			}
 			internal.openInventory(inv.player);
-			this.customSlots.put(0, this.addSlot(new Slot(internal, 0, 7, 28) {
+			this.customSlots.put(0, this.addSlot(new Slot(internal, 0, 116, 28) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return (new ItemStack(EmptyDiscItem.block, (int) (1)).getItem() == stack.getItem());
+				}
+			}));
+			this.customSlots.put(1, this.addSlot(new Slot(internal, 1, 188, 28) {
+			}));
+			this.customSlots.put(3, this.addSlot(new Slot(internal, 3, 152, 28) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
 			}));
 			int si;
 			int sj;
 			for (si = 0; si < 3; ++si)
 				for (sj = 0; sj < 9; ++sj)
-					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
+					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 55 + 8 + sj * 18, 16 + 84 + si * 18));
 			for (si = 0; si < 9; ++si)
-				this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
+				this.addSlot(new Slot(inv, si, 55 + 8 + si * 18, 16 + 142));
 		}
 
 		public Map<Integer, Slot> get() {
@@ -116,18 +128,18 @@ public class ComputerGUIGui extends NaoiphPackElements.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 1) {
-					if (!this.mergeItemStack(itemstack1, 1, this.inventorySlots.size(), true)) {
+				if (index < 3) {
+					if (!this.mergeItemStack(itemstack1, 3, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 1, false)) {
-					if (index < 1 + 27) {
-						if (!this.mergeItemStack(itemstack1, 1 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 3, false)) {
+					if (index < 3 + 27) {
+						if (!this.mergeItemStack(itemstack1, 3 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 1, 1 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 3, 3 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}
@@ -249,7 +261,6 @@ public class ComputerGUIGui extends NaoiphPackElements.ModElement {
 		private World world;
 		private int x, y, z;
 		private PlayerEntity entity;
-		TextFieldWidget ExtraCode;
 		public GuiWindow(GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
 			super(container, inventory, text);
 			this.world = container.world;
@@ -257,8 +268,8 @@ public class ComputerGUIGui extends NaoiphPackElements.ModElement {
 			this.y = container.y;
 			this.z = container.z;
 			this.entity = container.entity;
-			this.xSize = 176;
-			this.ySize = 166;
+			this.xSize = 285;
+			this.ySize = 197;
 		}
 		private static final ResourceLocation texture = new ResourceLocation("naoiphpack:textures/computergui.png");
 		@Override
@@ -266,7 +277,6 @@ public class ComputerGUIGui extends NaoiphPackElements.ModElement {
 			this.renderBackground();
 			super.render(mouseX, mouseY, partialTicks);
 			this.renderHoveredToolTip(mouseX, mouseY);
-			ExtraCode.render(mouseX, mouseY, partialTicks);
 		}
 
 		@Override
@@ -277,18 +287,21 @@ public class ComputerGUIGui extends NaoiphPackElements.ModElement {
 			int l = (this.height - this.ySize) / 2;
 			this.blit(k, l, 0, 0, this.xSize, this.ySize);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("naoiphpack:textures/cd64x64.png"));
-			this.blit(this.guiLeft + 52, this.guiTop + -4, 0, 0, 256, 256);
+			this.blit(this.guiLeft + 16, this.guiTop + 27, 0, 0, 256, 256);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("naoiphpack:textures/cd32x32.png"));
+			this.blit(this.guiLeft + 116, this.guiTop + 28, 0, 0, 256, 256);
 		}
 
 		@Override
 		public void tick() {
 			super.tick();
-			ExtraCode.tick();
 		}
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
-			this.font.drawString("Computer", 3, 2, -1);
+			this.font.drawString("Computer", 7, 9, -1);
+			this.font.drawString("", 90, 78, -1);
+			this.font.drawString("Enter disc", 97, 81, -16777216);
 		}
 
 		@Override
@@ -301,11 +314,7 @@ public class ComputerGUIGui extends NaoiphPackElements.ModElement {
 		public void init(Minecraft minecraft, int width, int height) {
 			super.init(minecraft, width, height);
 			minecraft.keyboardListener.enableRepeatEvents(true);
-			ExtraCode = new TextFieldWidget(this.font, 131, 85, 120, 20, "Extra Code");
-			guistate.put("text:ExtraCode", ExtraCode);
-			ExtraCode.setMaxStringLength(32767);
-			this.children.add(this.ExtraCode);
-			this.addButton(new Button(this.guiLeft + 26, this.guiTop + 24, 120, 20, "burn to disc", e -> {
+			this.addButton(new Button(this.guiLeft + 97, this.guiTop + 54, 120, 20, "burn to disc", e -> {
 				NaoiphPack.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
 				handleButtonAction(entity, 0, x, y, z);
 			}));

@@ -1062,6 +1062,71 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "ComputerGUIProcedure",
+      "type": "procedure",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "FullDisc",
+      "type": "item",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "RawBeastMeat",
+      "type": "item",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CookedBeastMeat",
+      "type": "food",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Cookbeastmeat",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Beast",
+      "type": "mob",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Mitre",
+      "type": "armor",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
     }
   ],
   "variable_elements": [
@@ -1070,6 +1135,12 @@
       "type": "logic",
       "scope": "world",
       "value": "false"
+    },
+    {
+      "name": "computerGUIText",
+      "type": "string",
+      "scope": "global",
+      "value": "enter disc"
     }
   ],
   "sound_elements": [
@@ -1086,14 +1157,16 @@
   ],
   "language_map": {
     "en_us": {
-      "block.naoiphpack.slatealter": "Slate Altar",
-      "entity.naoiphpack.sprinter": "Sprinter",
       "item.naoiphpack.emptydisc": "Empty Disc",
+      "entity.naoiphpack.sprinter": "Sprinter",
+      "block.naoiphpack.slatealter": "Slate Altar",
       "item.minecraft.tipped_arrow.effect.toxin": "Arrow of Toxin",
       "block.naoiphpack.slatebrickstairs": "Slate Brick Stairs",
       "block.naoiphpack.smokegrassplant": "Smokegrass Plant",
+      "entity.naoiphpack.beast": "Beast",
       "item.naoiphpack.unrefinedredquartz": "Unrefined Redquartz",
       "block.naoiphpack.slate": "Slate",
+      "item.naoiphpack.fulldisc": "Full Disc",
       "item.naoiphpack.naoiphgrassdrug": "Grass Drug",
       "item.naoiphpack.diesirae": "Music Disc",
       "item.naoiphpack.flowertea": "Smokegrass Flower Tea",
@@ -1103,6 +1176,7 @@
       "item.naoiphpack.naoiphashdimension": "Special Ash",
       "item.naoiphpack.redquartzarmourlegs": "Redquartz Leggings",
       "item.naoiphpack.diesirae.desc": "Dies Irae",
+      "item.naoiphpack.mitrelegs": "Mitre Leggings",
       "entity.naoiphpack.timmytime": "Timmy",
       "item.naoiphpack.redquartzarmourbody": "Redquartz Body",
       "item.naoiphpack.naoiphmapleleaf.desc": "Maple Leaf Rag",
@@ -1115,7 +1189,9 @@
       "item.naoiphpack.naoiphashitem": "Ash",
       "item.naoiphpack.jimmybody": "Child Body",
       "item.naoiphpack.smokegrassseeds": "Smokegrass Seeds",
+      "item.naoiphpack.cookedbeastmeat": "Cooked Beast Meat",
       "advancements.veryhigh.title": "Very High",
+      "item.naoiphpack.beast": "Beast Spawn Egg",
       "block.naoiphpack.baptismfont": "Baptism Font",
       "advancements.eatchild.descr": "Why did you eat that strange meal?",
       "item.naoiphpack.redquartzarmourboots": "Redquartz Boots",
@@ -1127,8 +1203,11 @@
       "advancements.uhohadvancement.descr": "why did you kill Jimmy??",
       "item.minecraft.splash_potion.effect.toxin": "Splash Toxin",
       "block.naoiphpack.naoiphash": "Ash",
+      "item.naoiphpack.mitrehelmet": "Mitre",
+      "item.naoiphpack.mitreboots": "Mitre Boots",
       "advancements.veryhigh.descr": "Oh no",
       "item.naoiphpack.jimmy": "Child",
+      "item.naoiphpack.rawbeastmeat": "Raw Beast Meat",
       "advancements.uhohadvancement.title": "Oh No",
       "effect.toxin": "Toxin",
       "block.naoiphpack.slatebrickslab": "Slate Brick Slab",
@@ -1137,6 +1216,7 @@
       "itemGroup.tabnaoiphpack": "Naoiph Pack",
       "item.naoiphpack.naoiphdealer": "Dealer Spawn Egg",
       "biome.naoiphpack.naoiphmaple": "Maple Biome",
+      "item.naoiphpack.mitrebody": "Mitre Body",
       "item.naoiphpack.driedflower": "Dried Smokegrass Flower",
       "item.naoiphpack.syringe": "Syringe",
       "item.minecraft.potion.effect.toxin": "Toxin",

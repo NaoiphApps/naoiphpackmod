@@ -11,7 +11,7 @@
     "renderType": 2,
     "customModelName": "supercomputermodel:default",
     "rotationMode": 1,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "transparencyType": "SOLID",
     "mx": 0.0,
     "my": 0.0,
@@ -26,7 +26,7 @@
     "resistance": 10.0,
     "hasGravity": false,
     "creativeTab": {
-      "value": "CUSTOM:NaoiphPack"
+      "value": "No creative tab entry"
     },
     "destroyTool": "pickaxe",
     "affectedBySilkTouch": true,
@@ -70,8 +70,8 @@
     "particleAmount": 4,
     "particleSpawningCondition": "ALWAYS",
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": false,
+    "guiBoundTo": "ComputerGUI",
+    "openGUIOnRightClick": true,
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,

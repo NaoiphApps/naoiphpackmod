@@ -15,6 +15,7 @@ import net.minecraft.client.Minecraft;
 import java.util.function.Supplier;
 
 public class NaoiphPackVariables {
+	public static String computerGUIText = "enter disc";
 	public static class WorldVariables extends WorldSavedData {
 		public static final String DATA_NAME = "naoiphpack_worldvars";
 		public boolean baptised = false;

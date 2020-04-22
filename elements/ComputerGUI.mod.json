@@ -3,8 +3,8 @@
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 352,
-    "height": 332,
+    "width": 570,
+    "height": 393,
     "renderBgLayer": true,
     "components": [
       {
@@ -16,8 +16,8 @@
             "falpha": 0.0
           },
           "name": "Computer",
-          "x": 257,
-          "y": 78
+          "x": 156,
+          "y": 60
         }
       },
       {
@@ -25,31 +25,20 @@
         "data": {
           "image": "cd64x64.png",
           "name": "cd64x64.png",
-          "x": 354,
-          "y": 66
-        }
-      },
-      {
-        "type": "textfield",
-        "data": {
-          "placeholder": "Extra Code",
-          "width": 240,
-          "height": 40,
-          "name": "ExtraCode",
-          "x": 262,
-          "y": 170
+          "x": 174,
+          "y": 96
         }
       },
       {
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": ""
+            "value": "CUSTOM:EmptyDisc"
           },
           "id": 0,
           "name": "Slot #0",
-          "x": 263,
-          "y": 127
+          "x": 372,
+          "y": 96
         }
       },
       {
@@ -59,8 +48,68 @@
           "width": 240,
           "height": 40,
           "name": "burn to disc",
-          "x": 303,
-          "y": 122
+          "x": 336,
+          "y": 150
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "",
+          "x": 322,
+          "y": 199
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Enter disc",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Enter disc",
+          "x": 336,
+          "y": 204
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "name": "Slot #1",
+          "x": 516,
+          "y": 96
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": -65485,
+            "falpha": 0.0
+          },
+          "id": 3,
+          "name": "Slot #3",
+          "x": 444,
+          "y": 96
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cd32x32.png",
+          "name": "cd32x32.png",
+          "x": 374,
+          "y": 98
         }
       }
     ]
