@@ -1,0 +1,68 @@
+{
+  "_fv": 6,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Computer",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Computer",
+          "x": 257,
+          "y": 78
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cd64x64.png",
+          "name": "cd64x64.png",
+          "x": 354,
+          "y": 66
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Extra Code",
+          "width": 240,
+          "height": 40,
+          "name": "ExtraCode",
+          "x": 262,
+          "y": 170
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "name": "Slot #0",
+          "x": 263,
+          "y": 127
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "burn to disc",
+          "width": 240,
+          "height": 40,
+          "name": "burn to disc",
+          "x": 303,
+          "y": 122
+        }
+      }
+    ]
+  }
+}

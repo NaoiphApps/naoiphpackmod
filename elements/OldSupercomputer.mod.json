@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "supercomputermodel:default",
-    "rotationMode": 2,
+    "rotationMode": 1,
     "hasTransparency": false,
     "transparencyType": "SOLID",
     "mx": 0.0,
@@ -28,7 +28,7 @@
     "creativeTab": {
       "value": "CUSTOM:NaoiphPack"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "affectedBySilkTouch": true,
     "customDrop": {
       "value": ""
@@ -56,7 +56,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "STONE"
     },
     "luminance": 0.0,
     "unbreakable": false,

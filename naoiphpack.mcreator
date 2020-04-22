@@ -1046,6 +1046,22 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "ComputerGUI",
+      "type": "gui",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EmptyDisc",
+      "type": "item",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [
@@ -1072,6 +1088,7 @@
     "en_us": {
       "block.naoiphpack.slatealter": "Slate Altar",
       "entity.naoiphpack.sprinter": "Sprinter",
+      "item.naoiphpack.emptydisc": "Empty Disc",
       "item.minecraft.tipped_arrow.effect.toxin": "Arrow of Toxin",
       "block.naoiphpack.slatebrickstairs": "Slate Brick Stairs",
       "block.naoiphpack.smokegrassplant": "Smokegrass Plant",

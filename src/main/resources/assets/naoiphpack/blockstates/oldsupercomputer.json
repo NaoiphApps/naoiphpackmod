@@ -14,14 +14,6 @@
     "facing=west": {
       "model": "naoiphpack:block/oldsupercomputer",
       "y": 270
-    },
-    "facing=up": {
-      "model": "naoiphpack:block/oldsupercomputer",
-      "x": 270
-    },
-    "facing=down": {
-      "model": "naoiphpack:block/oldsupercomputer",
-      "x": 90
     }
   }
 }
