@@ -36,6 +36,7 @@ import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 
+import net.mcreator.naoiphpack.procedures.RedquartzShotgunBulletHitsLivingEntityProcedure;
 import net.mcreator.naoiphpack.itemgroup.NaoiphPackItemGroup;
 import net.mcreator.naoiphpack.NaoiphPackElements;
 
@@ -114,8 +115,8 @@ public class RedquartzAssaultRifleItem extends NaoiphPackElements.ModElement {
 					int y = (int) entity.posY;
 					int z = (int) entity.posZ;
 					world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("")), SoundCategory.PLAYERS, 1,
-							1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")),
+							SoundCategory.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 					if (entity.abilities.isCreativeMode) {
 						entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
 					} else {
@@ -178,6 +179,15 @@ public class RedquartzAssaultRifleItem extends NaoiphPackElements.ModElement {
 		protected void arrowHit(LivingEntity entity) {
 			super.arrowHit(entity);
 			entity.setArrowCountInEntity(entity.getArrowCountInEntity() - 1);
+			int x = (int) this.posX;
+			int y = (int) this.posY;
+			int z = (int) this.posZ;
+			World world = this.world;
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
+				RedquartzShotgunBulletHitsLivingEntityProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

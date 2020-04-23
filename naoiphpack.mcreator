@@ -1083,14 +1083,6 @@
       "ids": {}
     },
     {
-      "name": "RawBeastMeat",
-      "type": "item",
-      "sortid": 90,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "CookedBeastMeat",
       "type": "food",
       "sortid": 91,
@@ -1183,6 +1175,54 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "RedquartzShotgunBulletHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AntWorker",
+      "type": "mob",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "RoofTile",
+      "type": "block",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "RoofTilerecipe",
+      "type": "recipe",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "RawBeastMeat",
+      "type": "food",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [
@@ -1231,6 +1271,7 @@
       "item.naoiphpack.strangefood": "Brick of Strange Food",
       "item.naoiphpack.naoiphashdimension": "Special Ash",
       "item.naoiphpack.redquartzarmourlegs": "Redquartz Leggings",
+      "entity.naoiphpack.antworker": "Ant Worker",
       "item.naoiphpack.diesirae.desc": "Dies Irae",
       "item.naoiphpack.mitrelegs": "Mitre Leggings",
       "entity.naoiphpack.timmytime": "Timmy",
@@ -1242,6 +1283,7 @@
       "item.naoiphpack.sprinter": "Sprinter Spawn Egg",
       "item.naoiphpack.seagull": "Seagull Spawn Egg",
       "item.minecraft.lingering_potion.effect.toxin": "Lingering Toxin",
+      "block.naoiphpack.rooftile": "Roof Tile",
       "block.naoiphpack.slatebrick": "Slate Brick",
       "item.naoiphpack.naoiphashitem": "Ash",
       "item.naoiphpack.jimmybody": "Child Body",
@@ -1272,6 +1314,7 @@
       "item.naoiphpack.plasmablade": "Plasma Blade",
       "item.naoiphpack.timmytime": "Timmy Spawn Egg",
       "itemGroup.tabnaoiphpack": "Naoiph Pack",
+      "item.naoiphpack.antworker": "Ant Worker Spawn Egg",
       "item.naoiphpack.naoiphdealer": "Dealer Spawn Egg",
       "biome.naoiphpack.naoiphmaple": "Maple Biome",
       "item.naoiphpack.mitrebody": "Mitre Body",

@@ -1,24 +1,21 @@
 {
   "_fv": 6,
-  "_type": "item",
+  "_type": "food",
   "definition": {
     "renderType": 0,
     "texture": "raw",
     "customModelName": "Normal",
     "name": "Raw Beast Meat",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:NaoiphPack"
     },
     "stackSize": 64,
-    "enchantability": 0,
-    "useDuration": 0,
-    "toolType": 1.0,
-    "damageCount": 0,
-    "destroyAnyBlock": false,
-    "stayInGridWhenCrafting": false,
-    "enableMeleeDamage": false,
-    "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatingSpeed": 32,
+    "forDogs": true,
+    "isAlwaysEdible": false,
+    "animation": "eat",
     "hasGlow": false
   }
 }

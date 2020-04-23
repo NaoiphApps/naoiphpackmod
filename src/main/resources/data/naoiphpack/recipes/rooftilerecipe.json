@@ -1,0 +1,23 @@
+{
+  "group": "naoiphpack",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 ",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:brick"
+    },
+    "2": {
+      "item": "minecraft:clay_ball"
+    },
+    "3": {
+      "item": "minecraft:brick"
+    }
+  },
+  "result": {
+    "item": "naoiphpack:rooftile",
+    "count": 1
+  }
+}

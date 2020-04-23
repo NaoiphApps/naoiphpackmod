@@ -39,6 +39,7 @@ import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 
+import net.mcreator.naoiphpack.procedures.RedquartzShotgunBulletHitsLivingEntityProcedure;
 import net.mcreator.naoiphpack.itemgroup.NaoiphPackItemGroup;
 import net.mcreator.naoiphpack.NaoiphPackElements;
 
@@ -199,6 +200,15 @@ public class RedquartzShotgunItem extends NaoiphPackElements.ModElement {
 		protected void arrowHit(LivingEntity entity) {
 			super.arrowHit(entity);
 			entity.setArrowCountInEntity(entity.getArrowCountInEntity() - 1);
+			int x = (int) this.posX;
+			int y = (int) this.posY;
+			int z = (int) this.posZ;
+			World world = this.world;
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
+				RedquartzShotgunBulletHitsLivingEntityProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

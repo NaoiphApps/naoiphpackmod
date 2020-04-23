@@ -16,7 +16,7 @@
     "shootConstantly": true,
     "usageCount": 300,
     "actionSound": {
-      "value": ""
+      "value": "entity.arrow.shoot"
     },
     "hasGlow": false,
     "enableMeleeDamage": false,
@@ -30,6 +30,9 @@
       "value": ""
     },
     "bulletModel": "Modelslug",
-    "customBulletModelTexture": "slug.png"
+    "customBulletModelTexture": "slug.png",
+    "onBulletHitsEntity": {
+      "name": "RedquartzShotgunBulletHitsLivingEntity"
+    }
   }
 }
