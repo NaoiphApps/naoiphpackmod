@@ -1,0 +1,27 @@
+{
+  "_fv": 6,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "plasmaaxe",
+    "customModelName": "Normal",
+    "name": "Plasma Axe",
+    "creativeTab": {
+      "value": "CUSTOM:NaoiphPack"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 11,
+    "efficiency": 10.0,
+    "attackSpeed": 4.5,
+    "enchantability": 2,
+    "damageVsEntity": 9.5,
+    "usageCount": 250,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Redquartz"
+      }
+    ]
+  }
+}

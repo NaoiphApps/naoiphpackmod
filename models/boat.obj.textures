@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "_1": "slate"
+      },
+      "name": "default"
+    }
+  }
+}

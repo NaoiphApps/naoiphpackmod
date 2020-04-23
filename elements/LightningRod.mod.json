@@ -1,0 +1,35 @@
+{
+  "_fv": 6,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "lightningstaff",
+    "customModelName": "Normal",
+    "name": "Lightning Staff",
+    "creativeTab": {
+      "value": "CUSTOM:NaoiphPack"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:Redquartz"
+    },
+    "shootConstantly": true,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "entity.blaze.hurt"
+    },
+    "hasGlow": true,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 40.0,
+    "bulletPower": 5.0,
+    "bulletDamage": 1.0,
+    "bulletKnockback": 0,
+    "bulletParticles": true,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": "CUSTOM:UnrefinedRedquartz"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}
