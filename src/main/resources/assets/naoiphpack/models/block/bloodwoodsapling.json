@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "naoiphpack:blocks/sapling",
+    "particle": "naoiphpack:blocks/sapling"
+  }
+}

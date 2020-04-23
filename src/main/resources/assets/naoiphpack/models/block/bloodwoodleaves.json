@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "naoiphpack:blocks/leaves",
+    "up": "naoiphpack:blocks/leaves",
+    "north": "naoiphpack:blocks/leaves",
+    "east": "naoiphpack:blocks/leaves",
+    "south": "naoiphpack:blocks/leaves",
+    "west": "naoiphpack:blocks/leaves",
+    "particle": "naoiphpack:blocks/leaves"
+  }
+}

@@ -39,30 +39,29 @@ import net.mcreator.naoiphpack.itemgroup.NaoiphPackItemGroup;
 import net.mcreator.naoiphpack.NaoiphPackElements;
 
 @NaoiphPackElements.ModElement.Tag
-public class OilBoatEntity extends NaoiphPackElements.ModElement {
+public class SlateBoatEntity extends NaoiphPackElements.ModElement {
 	public static EntityType entity = null;
-	public OilBoatEntity(NaoiphPackElements instance) {
-		super(instance, 114);
+	public SlateBoatEntity(NaoiphPackElements instance) {
+		super(instance, 113);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
 	@Override
 	public void initElements() {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.7999999999999999f, 0.4f)).build("oilboat")
-						.setRegistryName("oilboat");
+				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1f)).build("slateboat")
+						.setRegistryName("slateboat");
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -13421773, -16777216, new Item.Properties().group(NaoiphPackItemGroup.tab))
-				.setRegistryName("oilboat"));
+		elements.items.add(() -> new SpawnEggItem(entity, -1, -1, new Item.Properties().group(NaoiphPackItemGroup.tab)).setRegistryName("slateboat"));
 	}
 
 	@SubscribeEvent
 	@OnlyIn(Dist.CLIENT)
 	public void registerModels(ModelRegistryEvent event) {
 		RenderingRegistry.registerEntityRenderingHandler(CustomEntity.class, renderManager -> {
-			return new MobRenderer(renderManager, new Modeloilboat(), 0.5f) {
+			return new MobRenderer(renderManager, new Modelslateboat(), 0.5f) {
 				protected ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("naoiphpack:textures/oilboat.png");
+					return new ResourceLocation("naoiphpack:textures/slateboat.png");
 				}
 			};
 		});
@@ -106,12 +105,12 @@ public class OilBoatEntity extends NaoiphPackElements.ModElement {
 
 		@Override
 		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.land"));
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
 		}
 
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.hit"));
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
 		}
 
 		@Override
@@ -201,21 +200,18 @@ public class OilBoatEntity extends NaoiphPackElements.ModElement {
 	// Made with Blockbench
 	// Paste this code into your mod.
 	// Make sure to generate all required imports
-	public static class Modeloilboat extends EntityModel<Entity> {
+	public static class Modelslateboat extends EntityModel<Entity> {
 		private final RendererModel bb_main;
-		public Modeloilboat() {
-			textureWidth = 256;
-			textureHeight = 256;
+		public Modelslateboat() {
+			textureWidth = 128;
+			textureHeight = 128;
 			bb_main = new RendererModel(this);
 			bb_main.setRotationPoint(0.0F, 24.0F, 0.0F);
-			bb_main.cubeList.add(new ModelBox(bb_main, 112, 120, -8.0F, 0.0F, -24.0F, 16, 8, 16, 0.0F, false));
-			bb_main.cubeList.add(new ModelBox(bb_main, 112, 96, -8.0F, 0.0F, -8.0F, 16, 8, 16, 0.0F, false));
-			bb_main.cubeList.add(new ModelBox(bb_main, 64, 112, -8.0F, 0.0F, 8.0F, 16, 8, 16, 0.0F, false));
-			bb_main.cubeList.add(new ModelBox(bb_main, 80, 56, -8.0F, -11.0F, 24.0F, 16, 16, 16, 0.0F, false));
-			bb_main.cubeList.add(new ModelBox(bb_main, 80, 0, -8.0F, -9.0F, 31.0F, 16, 21, 16, -4.0F, false));
-			bb_main.cubeList.add(new ModelBox(bb_main, 0, 112, -8.0F, -8.0F, -40.0F, 16, 8, 16, 0.0F, false));
-			bb_main.cubeList.add(new ModelBox(bb_main, 0, 56, 8.0F, -8.0F, -24.0F, 16, 8, 48, 0.0F, false));
-			bb_main.cubeList.add(new ModelBox(bb_main, 0, 0, -24.0F, -8.0F, -24.0F, 16, 8, 48, 0.0F, false));
+			bb_main.cubeList.add(new ModelBox(bb_main, 0, 0, -8.0F, -1.0F, -8.0F, 16, 1, 16, 0.0F, false));
+			bb_main.cubeList.add(new ModelBox(bb_main, 18, 20, -8.0F, -4.0F, -8.0F, 1, 3, 16, 0.0F, false));
+			bb_main.cubeList.add(new ModelBox(bb_main, 0, 17, 7.0F, -4.0F, -8.0F, 1, 3, 16, 0.0F, false));
+			bb_main.cubeList.add(new ModelBox(bb_main, 36, 21, -7.0F, -4.0F, -8.0F, 14, 3, 1, 0.0F, false));
+			bb_main.cubeList.add(new ModelBox(bb_main, 36, 17, -7.0F, -4.0F, 7.0F, 14, 3, 1, 0.0F, false));
 		}
 
 		@Override

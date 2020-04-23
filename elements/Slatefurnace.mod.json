@@ -1,0 +1,45 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:NaoiphSlate"
+      },
+      {
+        "value": "CUSTOM:NaoiphSlate"
+      },
+      {
+        "value": "CUSTOM:NaoiphSlate"
+      },
+      {
+        "value": "CUSTOM:NaoiphSlate"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:NaoiphSlate"
+      },
+      {
+        "value": "CUSTOM:NaoiphSlate"
+      },
+      {
+        "value": "CUSTOM:NaoiphSlate"
+      },
+      {
+        "value": "CUSTOM:NaoiphSlate"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "Blocks.FURNACE"
+    },
+    "name": "slatefurnace",
+    "namespace": "mod"
+  }
+}

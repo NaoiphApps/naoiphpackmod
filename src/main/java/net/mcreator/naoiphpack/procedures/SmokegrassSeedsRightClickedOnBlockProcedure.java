@@ -33,6 +33,6 @@ public class SmokegrassSeedsRightClickedOnBlockProcedure extends NaoiphPackEleme
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), SmokegrassPlantBlock.block.getDefaultState(), 3);
+		world.setBlockState(new BlockPos((int) x, (int) (y + 1), (int) z), SmokegrassPlantBlock.block.getDefaultState(), 3);
 	}
 }

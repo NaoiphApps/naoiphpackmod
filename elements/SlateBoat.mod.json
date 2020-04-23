@@ -2,21 +2,21 @@
   "_fv": 6,
   "_type": "mob",
   "definition": {
-    "mobName": "Oil Boat",
+    "mobName": "Slate Boat",
     "mobLabel": "",
-    "mobModelTexture": "oilboat.png",
-    "mobModelName": "Modeloilboat",
-    "modelWidth": 0.7999999999999999,
-    "modelHeight": 0.4,
+    "mobModelTexture": "slateboat.png",
+    "mobModelName": "Modelslateboat",
+    "modelWidth": 0.6,
+    "modelHeight": 1.0,
     "modelShadowSize": 0.5,
     "armorBaseValue": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -13421773,
+      "value": -1,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -16777216,
+      "value": -1,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -71,10 +71,10 @@
       "value": ""
     },
     "hurtSound": {
-      "value": "block.anvil.land"
+      "value": "entity.generic.hurt"
     },
     "deathSound": {
-      "value": "block.anvil.hit"
+      "value": "entity.generic.death"
     },
     "spawnParticles": false,
     "particleToSpawn": {

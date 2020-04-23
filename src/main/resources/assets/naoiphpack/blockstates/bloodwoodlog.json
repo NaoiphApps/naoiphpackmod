@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "naoiphpack:block/bloodwoodlog"
+    },
+    "facing=north": {
+      "model": "naoiphpack:block/bloodwoodlog"
+    },
+    "facing=east": {
+      "model": "naoiphpack:block/bloodwoodlog",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "naoiphpack:block/bloodwoodlog",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "naoiphpack:block/bloodwoodlog",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "naoiphpack:block/bloodwoodlog",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

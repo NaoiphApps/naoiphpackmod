@@ -1,0 +1,39 @@
+{
+  "group": "naoiphpack",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "naoiphpack:slate"
+    },
+    "1": {
+      "item": "naoiphpack:slate"
+    },
+    "2": {
+      "item": "naoiphpack:slate"
+    },
+    "3": {
+      "item": "naoiphpack:slate"
+    },
+    "5": {
+      "item": "naoiphpack:slate"
+    },
+    "6": {
+      "item": "naoiphpack:slate"
+    },
+    "7": {
+      "item": "naoiphpack:slate"
+    },
+    "8": {
+      "item": "naoiphpack:slate"
+    }
+  },
+  "result": {
+    "item": "minecraft:furnace",
+    "count": 1
+  }
+}
