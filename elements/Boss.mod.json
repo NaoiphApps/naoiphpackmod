@@ -65,7 +65,7 @@
     "immuneToPotions": false,
     "immuneToPlayer": false,
     "mobDrop": {
-      "value": "CUSTOM:Redquartz"
+      "value": "CUSTOM:LightningRod"
     },
     "livingSound": {
       "value": "entity.endermen.ambient"

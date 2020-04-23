@@ -30,12 +30,17 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.enchantment.EnchantmentHelper;
-import net.minecraft.client.renderer.entity.SpriteRenderer;
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.model.ModelBox;
+import net.minecraft.client.renderer.entity.model.RendererModel;
+import net.minecraft.client.renderer.entity.model.EntityModel;
+import net.minecraft.client.renderer.entity.EntityRendererManager;
+import net.minecraft.client.renderer.entity.EntityRenderer;
 
 import net.mcreator.naoiphpack.procedures.LightningRodBulletHitsSomethingProcedure;
 import net.mcreator.naoiphpack.itemgroup.NaoiphPackItemGroup;
 import net.mcreator.naoiphpack.NaoiphPackElements;
+
+import com.mojang.blaze3d.platform.GlStateManager;
 
 @NaoiphPackElements.ModElement.Tag
 public class LightningRodItem extends NaoiphPackElements.ModElement {
@@ -59,7 +64,7 @@ public class LightningRodItem extends NaoiphPackElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	public void init(FMLCommonSetupEvent event) {
 		RenderingRegistry.registerEntityRenderingHandler(ArrowCustomEntity.class, renderManager -> {
-			return new SpriteRenderer(renderManager, Minecraft.getInstance().getItemRenderer());
+			return new CustomRender(renderManager);
 		});
 	}
 	public static class ItemRanged extends Item {
@@ -108,7 +113,7 @@ public class LightningRodItem extends NaoiphPackElements.ModElement {
 					ArrowCustomEntity entityarrow = new ArrowCustomEntity(arrow, entity, world);
 					entityarrow.shoot(entity.getLookVec().x, entity.getLookVec().y, entity.getLookVec().z, power * 2, 0);
 					entityarrow.setSilent(true);
-					entityarrow.setIsCritical(true);
+					entityarrow.setIsCritical(false);
 					entityarrow.setDamage(1);
 					entityarrow.setKnockbackStrength(0);
 					entityarrow.setFire(100);
@@ -169,29 +174,12 @@ public class LightningRodItem extends NaoiphPackElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(UnrefinedRedquartzItem.block, (int) (1));
+			return null;
 		}
 
 		@Override
 		protected ItemStack getArrowStack() {
 			return new ItemStack(RedquartzItem.block, (int) (1));
-		}
-
-		@Override
-		public void onCollideWithPlayer(PlayerEntity entity) {
-			super.onCollideWithPlayer(entity);
-			int x = (int) this.posX;
-			int y = (int) this.posY;
-			int z = (int) this.posZ;
-			World world = this.world;
-			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				LightningRodBulletHitsSomethingProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override
@@ -231,6 +219,56 @@ public class LightningRodItem extends NaoiphPackElements.ModElement {
 				}
 				this.remove();
 			}
+		}
+	}
+
+	public static class CustomRender extends EntityRenderer<ArrowCustomEntity> {
+		private static final ResourceLocation texture = new ResourceLocation("naoiphpack:textures/slug.png");
+		public CustomRender(EntityRendererManager renderManager) {
+			super(renderManager);
+		}
+
+		@Override
+		public void doRender(ArrowCustomEntity bullet, double d, double d1, double d2, float f, float f1) {
+			this.bindEntityTexture(bullet);
+			GlStateManager.pushMatrix();
+			GlStateManager.translatef((float) d, (float) d1, (float) d2);
+			GlStateManager.rotatef(f, 0, 1, 0);
+			GlStateManager.rotatef(90f - bullet.prevRotationPitch - (bullet.rotationPitch - bullet.prevRotationPitch) * f1, 1, 0, 0);
+			EntityModel model = new Modelslug();
+			model.render(bullet, 0, 0, 0, 0, 0, 0.0625f);
+			GlStateManager.popMatrix();
+		}
+
+		@Override
+		protected ResourceLocation getEntityTexture(ArrowCustomEntity entity) {
+			return texture;
+		}
+	}
+
+	// Made with Blockbench
+	// Paste this code into your mod.
+	// Make sure to generate all required imports
+	public static class Modelslug extends EntityModel<Entity> {
+		private final RendererModel bb_main;
+		public Modelslug() {
+			textureWidth = 16;
+			textureHeight = 16;
+			bb_main = new RendererModel(this);
+			bb_main.setRotationPoint(0.0F, 24.0F, 0.0F);
+			setRotationAngle(bb_main, 1.5708F, 0.0F, 0.0F);
+			bb_main.cubeList.add(new ModelBox(bb_main, 0, 0, -1.0F, -1.0F, -2.0F, 2, 2, 4, 0.0F, false));
+		}
+
+		@Override
+		public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
+			bb_main.render(f5);
+		}
+
+		public void setRotationAngle(RendererModel modelRenderer, float x, float y, float z) {
+			modelRenderer.rotateAngleX = x;
+			modelRenderer.rotateAngleY = y;
+			modelRenderer.rotateAngleZ = z;
 		}
 	}
 }

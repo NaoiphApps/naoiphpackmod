@@ -39,7 +39,7 @@ import net.minecraft.client.renderer.entity.BipedRenderer;
 import net.mcreator.naoiphpack.procedures.BossTouchProcedure;
 import net.mcreator.naoiphpack.procedures.BossAttackProcedure;
 import net.mcreator.naoiphpack.itemgroup.NaoiphPackItemGroup;
-import net.mcreator.naoiphpack.item.RedquartzItem;
+import net.mcreator.naoiphpack.item.LightningRodItem;
 import net.mcreator.naoiphpack.NaoiphPackElements;
 
 @NaoiphPackElements.ModElement.Tag
@@ -108,7 +108,7 @@ public class BossEntity extends NaoiphPackElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(RedquartzItem.block, (int) (1)));
+			this.entityDropItem(new ItemStack(LightningRodItem.block, (int) (1)));
 		}
 
 		@Override
