@@ -33,6 +33,7 @@ import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.client.renderer.entity.SpriteRenderer;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.naoiphpack.procedures.LightningRodBulletHitsSomethingProcedure;
 import net.mcreator.naoiphpack.itemgroup.NaoiphPackItemGroup;
 import net.mcreator.naoiphpack.NaoiphPackElements;
 
@@ -177,9 +178,38 @@ public class LightningRodItem extends NaoiphPackElements.ModElement {
 		}
 
 		@Override
+		public void onCollideWithPlayer(PlayerEntity entity) {
+			super.onCollideWithPlayer(entity);
+			int x = (int) this.posX;
+			int y = (int) this.posY;
+			int z = (int) this.posZ;
+			World world = this.world;
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				LightningRodBulletHitsSomethingProcedure.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
 		protected void arrowHit(LivingEntity entity) {
 			super.arrowHit(entity);
 			entity.setArrowCountInEntity(entity.getArrowCountInEntity() - 1);
+			int x = (int) this.posX;
+			int y = (int) this.posY;
+			int z = (int) this.posZ;
+			World world = this.world;
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				LightningRodBulletHitsSomethingProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override
@@ -191,6 +221,14 @@ public class LightningRodItem extends NaoiphPackElements.ModElement {
 			World world = this.world;
 			Entity entity = this.getShooter();
 			if (this.inGround) {
+				{
+					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
+					$_dependencies.put("world", world);
+					LightningRodBulletHitsSomethingProcedure.executeProcedure($_dependencies);
+				}
 				this.remove();
 			}
 		}

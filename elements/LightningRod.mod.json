@@ -30,6 +30,15 @@
       "value": "CUSTOM:UnrefinedRedquartz"
     },
     "bulletModel": "Default",
-    "customBulletModelTexture": ""
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "LightningRodBulletHitsSomething"
+    },
+    "onBulletHitsPlayer": {
+      "name": "LightningRodBulletHitsSomething"
+    },
+    "onBulletHitsEntity": {
+      "name": "LightningRodBulletHitsSomething"
+    }
   }
 }
