@@ -13,18 +13,18 @@
     "treeType": 1,
     "vanillaTreeType": "Default",
     "minHeight": 20,
-    "spawnVines": true,
+    "spawnVines": false,
     "treeVines": {
-      "value": "Blocks.VINE"
+      "value": "Blocks.AIR"
     },
     "treeStem": {
-      "value": "Blocks.LOG"
+      "value": "Blocks.AIR"
     },
     "treeBranch": {
-      "value": "Blocks.LEAVES"
+      "value": "Blocks.AIR"
     },
     "treeFruits": {
-      "value": "Blocks.SEA_LANTERN"
+      "value": "Blocks.AIR"
     },
     "customColors": true,
     "airColor": {

@@ -2,12 +2,12 @@
   "_fv": 6,
   "_type": "structure",
   "definition": {
-    "structure": "church",
+    "structure": "bloodwoodtree",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 4000,
+    "spawnProbability": 10000,
     "minCountPerChunk": 1,
-    "maxCountPerChunk": 1,
+    "maxCountPerChunk": 8,
     "spawnLocation": "Ground",
     "spawnHeightOffset": 0,
     "spawnWorldTypes": [
@@ -15,12 +15,6 @@
     ],
     "restrictionBlocks": [],
     "restrictionBiomes": [
-      {
-        "value": "CUSTOM:NaoiphSlateBiome"
-      },
-      {
-        "value": "CUSTOM:NaoiphAshBiome"
-      },
       {
         "value": "CUSTOM:NaoiphMaple"
       }

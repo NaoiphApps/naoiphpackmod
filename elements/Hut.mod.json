@@ -2,10 +2,10 @@
   "_fv": 6,
   "_type": "structure",
   "definition": {
-    "structure": "church",
+    "structure": "hut",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 4000,
+    "spawnProbability": 3000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
@@ -16,13 +16,13 @@
     "restrictionBlocks": [],
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:NaoiphSlateBiome"
+        "value": "CUSTOM:NaoiphMaple"
       },
       {
         "value": "CUSTOM:NaoiphAshBiome"
       },
       {
-        "value": "CUSTOM:NaoiphMaple"
+        "value": "CUSTOM:NaoiphSlateBiome"
       }
     ]
   }

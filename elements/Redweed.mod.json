@@ -20,7 +20,7 @@
       "value": "PLANT"
     },
     "customDrop": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "dropAmount": 1,
     "isReplaceable": false,

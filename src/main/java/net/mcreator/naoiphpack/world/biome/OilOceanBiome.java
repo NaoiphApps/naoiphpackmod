@@ -34,7 +34,7 @@ public class OilOceanBiome extends NaoiphPackElements.ModElement {
 	}
 	static class CustomBiome extends Biome {
 		public CustomBiome() {
-			super(new Biome.Builder().downfall(0.5f).depth(0.1f).scale(0f).temperature(0.5f).precipitation(Biome.RainType.RAIN)
+			super(new Biome.Builder().downfall(0.5f).depth(-0.01f).scale(0f).temperature(0.5f).precipitation(Biome.RainType.RAIN)
 					.category(Biome.Category.NONE).waterColor(-10092544).waterFogColor(-10092544).parent("ocean")
 					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(OilBlock.block.getDefaultState(),
 							Blocks.GLOWSTONE.getDefaultState(), Blocks.GLOWSTONE.getDefaultState())));

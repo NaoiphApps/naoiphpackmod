@@ -1,0 +1,30 @@
+{
+  "group": "naoiphpack",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "naoiphpack:redquartz"
+    },
+    "1": {
+      "item": "naoiphpack:redquartz"
+    },
+    "2": {
+      "item": "naoiphpack:redquartz"
+    },
+    "4": {
+      "item": "minecraft:iron_ingot"
+    },
+    "7": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "naoiphpack:plasmapickaxe",
+    "count": 1
+  }
+}

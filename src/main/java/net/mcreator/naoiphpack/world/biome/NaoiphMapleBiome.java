@@ -162,9 +162,9 @@ public class NaoiphMapleBiome extends NaoiphPackElements.ModElement {
 										BlockPos blockpos = new BlockPos(k1, genh, i2);
 										state = world.getBlockState(blockpos);
 										if (state.getBlock().isAir(state, world, blockpos) || state.getMaterial().blocksMovement()
-												|| state.isIn(BlockTags.LEAVES) || state.getBlock() == Blocks.VINE.getDefaultState().getBlock()
-												|| state.getBlock() == Blocks.OAK_LEAVES.getDefaultState().getBlock()) {
-											setTreeBlockState(changedBlocks, world, blockpos, Blocks.OAK_LEAVES.getDefaultState(), bbox);
+												|| state.isIn(BlockTags.LEAVES) || state.getBlock() == Blocks.AIR.getDefaultState().getBlock()
+												|| state.getBlock() == Blocks.AIR.getDefaultState().getBlock()) {
+											setTreeBlockState(changedBlocks, world, blockpos, Blocks.AIR.getDefaultState(), bbox);
 										}
 									}
 								}
@@ -173,43 +173,10 @@ public class NaoiphMapleBiome extends NaoiphPackElements.ModElement {
 						for (int genh = 0; genh < height; genh++) {
 							BlockPos genhPos = position.up(genh);
 							state = world.getBlockState(genhPos);
-							setTreeBlockState(changedBlocks, world, genhPos, Blocks.OAK_LOG.getDefaultState(), bbox);
+							setTreeBlockState(changedBlocks, world, genhPos, Blocks.AIR.getDefaultState(), bbox);
 							if (state.getBlock().isAir(state, world, genhPos) || state.getMaterial().blocksMovement() || state.isIn(BlockTags.LEAVES)
-									|| state.getBlock() == Blocks.VINE.getDefaultState().getBlock()
-									|| state.getBlock() == Blocks.OAK_LEAVES.getDefaultState().getBlock()) {
-								if (genh > 0) {
-									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(-1, genh, 0)))
-										setTreeBlockState(changedBlocks, world, position.add(-1, genh, 0), Blocks.VINE.getDefaultState(), bbox);
-									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(1, genh, 0)))
-										setTreeBlockState(changedBlocks, world, position.add(1, genh, 0), Blocks.VINE.getDefaultState(), bbox);
-									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, -1)))
-										setTreeBlockState(changedBlocks, world, position.add(0, genh, -1), Blocks.VINE.getDefaultState(), bbox);
-									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, 1)))
-										setTreeBlockState(changedBlocks, world, position.add(0, genh, 1), Blocks.VINE.getDefaultState(), bbox);
-								}
-							}
-						}
-						for (int genh = position.getY() - 3 + height; genh <= position.getY() + height; genh++) {
-							int k4 = (int) (1 - (genh - (position.getY() + height)) * 0.5);
-							for (int genx = position.getX() - k4; genx <= position.getX() + k4; genx++) {
-								for (int genz = position.getZ() - k4; genz <= position.getZ() + k4; genz++) {
-									BlockPos bpos = new BlockPos(genx, genh, genz);
-									state = world.getBlockState(bpos);
-									if (state.isIn(BlockTags.LEAVES) || state.getBlock() == Blocks.OAK_LEAVES.getDefaultState().getBlock()) {
-										BlockPos blockpos1 = bpos.south();
-										BlockPos blockpos2 = bpos.west();
-										BlockPos blockpos3 = bpos.east();
-										BlockPos blockpos4 = bpos.north();
-										if (rand.nextInt(4) == 0 && world.isAirBlock(blockpos2))
-											this.addVines(world, blockpos2, changedBlocks, bbox);
-										if (rand.nextInt(4) == 0 && world.isAirBlock(blockpos3))
-											this.addVines(world, blockpos3, changedBlocks, bbox);
-										if (rand.nextInt(4) == 0 && world.isAirBlock(blockpos4))
-											this.addVines(world, blockpos4, changedBlocks, bbox);
-										if (rand.nextInt(4) == 0 && world.isAirBlock(blockpos1))
-											this.addVines(world, blockpos1, changedBlocks, bbox);
-									}
-								}
+									|| state.getBlock() == Blocks.AIR.getDefaultState().getBlock()
+									|| state.getBlock() == Blocks.AIR.getDefaultState().getBlock()) {
 							}
 						}
 						if (rand.nextInt(4) == 0 && height > 5) {
@@ -218,7 +185,7 @@ public class NaoiphMapleBiome extends NaoiphPackElements.ModElement {
 									if (rand.nextInt(4 - hlevel) == 0) {
 										Direction dir = Direction.getOpposite();
 										setTreeBlockState(changedBlocks, world, position.add(dir.getXOffset(), height - 5 + hlevel, dir.getZOffset()),
-												Blocks.SEA_LANTERN.getDefaultState(), bbox);
+												Blocks.AIR.getDefaultState(), bbox);
 									}
 								}
 							}
@@ -234,18 +201,17 @@ public class NaoiphMapleBiome extends NaoiphPackElements.ModElement {
 		}
 
 		private void addVines(IWorld world, BlockPos pos, Set<BlockPos> changedBlocks, MutableBoundingBox bbox) {
-			setTreeBlockState(changedBlocks, world, pos, Blocks.VINE.getDefaultState(), bbox);
+			setTreeBlockState(changedBlocks, world, pos, Blocks.AIR.getDefaultState(), bbox);
 			int i = 5;
 			for (BlockPos blockpos = pos.down(); world.isAirBlock(blockpos) && i > 0; --i) {
-				setTreeBlockState(changedBlocks, world, blockpos, Blocks.VINE.getDefaultState(), bbox);
+				setTreeBlockState(changedBlocks, world, blockpos, Blocks.AIR.getDefaultState(), bbox);
 				blockpos = blockpos.down();
 			}
 		}
 
 		private boolean canGrowInto(Block blockType) {
-			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == Blocks.OAK_LOG.getDefaultState().getBlock()
-					|| blockType == Blocks.OAK_LEAVES.getDefaultState().getBlock()
-					|| blockType == NaoiphRedBlockBlock.block.getDefaultState().getBlock()
+			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == Blocks.AIR.getDefaultState().getBlock()
+					|| blockType == Blocks.AIR.getDefaultState().getBlock() || blockType == NaoiphRedBlockBlock.block.getDefaultState().getBlock()
 					|| blockType == NaoiphSlateBlock.block.getDefaultState().getBlock();
 		}
 

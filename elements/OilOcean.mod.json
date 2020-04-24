@@ -51,11 +51,11 @@
     "deadBushesPerChunk": 0,
     "rainingPossibility": 0.5,
     "temperature": 0.5,
-    "baseHeight": 0.09999999999999999,
+    "baseHeight": -0.01,
     "heightVariation": 0.0,
     "spawnBiome": false,
     "biomeWeight": 10,
-    "biomeType": "WARM",
+    "biomeType": "ICY",
     "biomeCategory": "NONE",
     "parent": {
       "value": "ocean"

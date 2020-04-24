@@ -1523,6 +1523,74 @@
           }
         ]
       }
+    },
+    {
+      "name": "Hut",
+      "type": "structure",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Plasmapickaxerecipe",
+      "type": "recipe",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Plasmaaxerecipe",
+      "type": "recipe",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Bloodwoodtree",
+      "type": "structure",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TreespawningblockBlockAdded",
+      "type": "procedure",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Treespawningblock",
+      "type": "block",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [
@@ -1555,15 +1623,15 @@
     "en_us": {
       "item.naoiphpack.lightningrod": "Lightning Staff",
       "item.minecraft.tipped_arrow.effect.toxin": "Arrow of Toxin",
-      "entity.naoiphpack.beast": "Beast",
       "block.naoiphpack.smokegrassplant": "Smokegrass Plant",
-      "block.naoiphpack.slate": "Slate",
+      "entity.naoiphpack.beast": "Beast",
       "item.naoiphpack.unrefinedredquartz": "Unrefined Redquartz",
-      "biome.naoiphpack.naoiphashbiome": "Ash Biome",
+      "block.naoiphpack.slate": "Slate",
       "block.naoiphpack.sacraficealtar": "Sacrafice Altar",
+      "biome.naoiphpack.naoiphashbiome": "Ash Biome",
       "item.naoiphpack.strangefood": "Brick of Strange Food",
-      "entity.naoiphpack.antworker": "Ant Worker",
       "item.naoiphpack.redquartzarmourlegs": "Redquartz Leggings",
+      "entity.naoiphpack.antworker": "Ant Worker",
       "item.naoiphpack.diesirae.desc": "Dies Irae",
       "entity.naoiphpack.timmytime": "Timmy",
       "entity.naoiphpack.naoiphdealer": "Dealer",
@@ -1604,6 +1672,7 @@
       "entity.naoiphpack.sprinter": "Sprinter",
       "block.naoiphpack.slatealter": "Slate Altar",
       "block.naoiphpack.slatebrickstairs": "Slate Brick Stairs",
+      "block.naoiphpack.treespawningblock": "Treespawningblock",
       "item.naoiphpack.plasmaaxe": "Plasma Axe",
       "item.naoiphpack.fulldisc": "Full Disc",
       "item.naoiphpack.naoiphgrassdrug": "Grass Drug",
