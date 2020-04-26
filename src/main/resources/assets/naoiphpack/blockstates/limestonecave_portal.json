@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "naoiphpack:block/limestonecave_portal_ew"
+    },
+    "axis=x": {
+      "model": "naoiphpack:block/limestonecave_portal_ns"
+    }
+  }
+}

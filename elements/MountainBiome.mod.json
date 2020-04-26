@@ -1,0 +1,72 @@
+{
+  "_fv": 6,
+  "_type": "biome",
+  "definition": {
+    "name": "Mountain Biome",
+    "groundBlock": {
+      "value": "CUSTOM:LimeRockGrass"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:LimeRock"
+    },
+    "generateLakes": true,
+    "treeType": 0,
+    "vanillaTreeType": "Default",
+    "minHeight": 0,
+    "spawnVines": false,
+    "treeVines": {
+      "value": "Blocks.AIR"
+    },
+    "treeStem": {
+      "value": "Blocks.AIR"
+    },
+    "treeBranch": {
+      "value": "Blocks.AIR"
+    },
+    "treeFruits": {
+      "value": "Blocks.AIR"
+    },
+    "customColors": false,
+    "airColor": {
+      "value": -5916161,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -13369498,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -16724788,
+      "falpha": 0.0
+    },
+    "treesPerChunk": 1,
+    "grassPerChunk": 8,
+    "flowersPerChunk": 4,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPathcesPerChunk": 0,
+    "gravelPatchesPerChunk": 1,
+    "reedsPerChunk": 2,
+    "cactiPerChunk": 0,
+    "deadBushesPerChunk": 1,
+    "rainingPossibility": 0.5,
+    "temperature": 0.5,
+    "baseHeight": 0.39999999999999997,
+    "heightVariation": 0.51,
+    "spawnBiome": true,
+    "biomeWeight": 10,
+    "biomeType": "COOL",
+    "biomeCategory": "EXTREME_HILLS",
+    "parent": {
+      "value": "No parent"
+    },
+    "biomeDictionaryTypes": [
+      "MOUNTAIN"
+    ],
+    "spawnList": [
+      {
+        "value": "EntitySheep"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "naoiphpack:blocks/limestone",
+    "up": "naoiphpack:blocks/limestone",
+    "north": "naoiphpack:blocks/limestone",
+    "east": "naoiphpack:blocks/limestone",
+    "south": "naoiphpack:blocks/limestone",
+    "west": "naoiphpack:blocks/limestone",
+    "particle": "naoiphpack:blocks/limestone"
+  }
+}

@@ -1591,6 +1591,210 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "LimeRock",
+      "type": "block",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LimeRockGrass",
+      "type": "block",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "StingingNettlesMobplayerCollidesWithPlant",
+      "type": "procedure",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StingingNettles",
+      "type": "plant",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MountainGrass",
+      "type": "plant",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MountainBiome",
+      "type": "biome",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Limestone",
+      "type": "block",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LimestoneBlock",
+      "type": "block",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LimestoneLargeBrick",
+      "type": "block",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LimestoneBricks",
+      "type": "block",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LimestoneLargeBrickStairs",
+      "type": "block",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LimestoneLargeBrickSlab",
+      "type": "block",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LimestonePillar",
+      "type": "block",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LimestoneAndMountain",
+      "type": "tab",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LimestoneCave",
+      "type": "dimension",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BellBlockRedstoneOn",
+      "type": "procedure",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BellBlock",
+      "type": "block",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AshBurningRecipe",
+      "type": "recipe",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "WalkingstickItemInHandTick",
+      "type": "procedure",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Walkingstick",
+      "type": "item",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Walkingstickrecipe",
+      "type": "recipe",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [
@@ -1627,19 +1831,25 @@
       "entity.naoiphpack.beast": "Beast",
       "item.naoiphpack.unrefinedredquartz": "Unrefined Redquartz",
       "block.naoiphpack.slate": "Slate",
-      "block.naoiphpack.sacraficealtar": "Sacrafice Altar",
+      "block.naoiphpack.limestonelargebrickstairs": "Limestone Large Brick Stairs",
+      "item.naoiphpack.walkingstick": "Large Stick",
       "biome.naoiphpack.naoiphashbiome": "Ash Biome",
+      "block.naoiphpack.sacraficealtar": "Sacrafice Altar",
       "item.naoiphpack.strangefood": "Brick of Strange Food",
       "item.naoiphpack.redquartzarmourlegs": "Redquartz Leggings",
       "entity.naoiphpack.antworker": "Ant Worker",
       "item.naoiphpack.diesirae.desc": "Dies Irae",
       "entity.naoiphpack.timmytime": "Timmy",
+      "block.naoiphpack.limerock": "Mountain Rock",
       "entity.naoiphpack.naoiphdealer": "Dealer",
+      "block.naoiphpack.limestonebricks": "Limestone Bricks",
       "biome.naoiphpack.oilocean": "Oil Ocean",
       "item.naoiphpack.sprinter": "Sprinter Spawn Egg",
       "item.naoiphpack.seagull": "Seagull Spawn Egg",
       "item.minecraft.lingering_potion.effect.toxin": "Lingering Toxin",
+      "block.naoiphpack.stingingnettles": "Stinging Nettles",
       "item.naoiphpack.jimmybody": "Child Body",
+      "biome.naoiphpack.mountainbiome": "Mountain Biome",
       "item.naoiphpack.smokegrassseeds": "Smokegrass Seeds",
       "item.naoiphpack.redweedbundle": "Redweed Bundle",
       "item.naoiphpack.redquartzarmourboots": "Redquartz Boots",
@@ -1654,17 +1864,22 @@
       "block.naoiphpack.slatebrickslab": "Slate Brick Slab",
       "itemGroup.tabnaoiphpack": "Naoiph Pack",
       "item.naoiphpack.antworker": "Ant Worker Spawn Egg",
+      "block.naoiphpack.bellblock": "Bell Block",
+      "block.naoiphpack.mountaingrass": "Mountain Grass",
       "item.naoiphpack.naoiphdealer": "Dealer Spawn Egg",
       "biome.naoiphpack.naoiphmaple": "Maple Biome",
       "item.naoiphpack.mitrebody": "Mitre Body",
       "item.minecraft.potion.effect.toxin": "Toxin",
+      "block.naoiphpack.limerockgrass": "Lime Rock Grass",
       "entity.naoiphpack.slateboat": "Slate Boat",
       "item.naoiphpack.oil_bucket": "Oil Bucket",
       "biome.naoiphpack.naoiphslatebiome": "Slate Biome",
+      "block.naoiphpack.limestonepillar": "Limestone Pillar",
       "block.naoiphpack.naoiphsmokingash": "Smoking Ash",
       "block.naoiphpack.redquartzore": "Redquartz Ore",
       "item.naoiphpack.jimmyhead": "Child Head",
       "item.naoiphpack.bloodwoodsaplingitem": "Bloodwood Sapling",
+      "item.naoiphpack.limestonecave": "Limestone Cave Portal Igniter",
       "block.naoiphpack.naoiphredblock": "Blood Grass",
       "item.naoiphpack.filledsyringe": "Filled Syringe",
       "item.naoiphpack.plasmapickaxe": "Plasma Pickaxe",
@@ -1684,6 +1899,7 @@
       "item.naoiphpack.redquartzarmourbody": "Redquartz Body",
       "item.naoiphpack.naoiphmapleleaf.desc": "Maple Leaf Rag",
       "block.naoiphpack.bloodwoodsapling": "Bloodwood Sapling",
+      "block.naoiphpack.limestonelargebrick": "Limestone Large Brick",
       "block.naoiphpack.rooftile": "Roof Tile",
       "block.naoiphpack.slatebrick": "Slate Brick",
       "item.naoiphpack.oilboat": "Oil Boat Spawn Egg",
@@ -1691,6 +1907,7 @@
       "item.naoiphpack.cookedbeastmeat": "Cooked Beast Meat",
       "item.naoiphpack.beast": "Beast Spawn Egg",
       "advancements.veryhigh.title": "Very High",
+      "block.naoiphpack.limestone": "Limestone",
       "block.naoiphpack.baptismfont": "Baptism Font",
       "advancements.eatchild.descr": "Why did you eat that strange meal?",
       "item.naoiphpack.smokegrass": "Smokegrass",
@@ -1707,6 +1924,8 @@
       "entity.naoiphpack.oilboat": "Oil Boat",
       "item.naoiphpack.plasmablade": "Plasma Blade",
       "item.naoiphpack.timmytime": "Timmy Spawn Egg",
+      "block.naoiphpack.limestoneblock": "Limestone Block",
+      "itemGroup.tablimestoneandmountain": "Naoiph Pack - misc.",
       "block.naoiphpack.bloodwoodlog": "Bloodwood Log",
       "item.naoiphpack.driedflower": "Dried Smokegrass Flower",
       "item.naoiphpack.syringe": "Syringe",
@@ -1717,6 +1936,7 @@
       "entity.naoiphpack.boss": "Boss",
       "advancements.eatchild.title": "I think you just ate a child",
       "item.naoiphpack.redquartzshotgun": "Redquartz Shotgun",
+      "block.naoiphpack.limestonelargebrickslab": "Limestone Large Brick Slab",
       "item.naoiphpack.naoiphmapleleaf": "Music Disc",
       "item.naoiphpack.smokegrassflower": "Smokegrass Flower"
     }

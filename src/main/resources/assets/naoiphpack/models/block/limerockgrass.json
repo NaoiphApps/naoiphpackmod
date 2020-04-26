@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "naoiphpack:blocks/rock",
+    "up": "naoiphpack:blocks/grasstop",
+    "north": "naoiphpack:blocks/grassrock",
+    "east": "naoiphpack:blocks/grassrock",
+    "south": "naoiphpack:blocks/grassrock",
+    "west": "naoiphpack:blocks/grassrock",
+    "particle": "naoiphpack:blocks/rock"
+  }
+}

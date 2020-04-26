@@ -1,0 +1,56 @@
+{
+  "_fv": 6,
+  "_type": "dimension",
+  "definition": {
+    "portalFrame": {
+      "value": "CUSTOM:Limestone"
+    },
+    "portalParticles": {
+      "value": "DRIP_WATER"
+    },
+    "portalLuminance": 0.09999999999999999,
+    "portalSound": {
+      "value": ""
+    },
+    "igniterName": "Limestone Cave Portal Igniter",
+    "igniterTab": {
+      "value": "CUSTOM:LimestoneAndMountain"
+    },
+    "texture": "lightning",
+    "portalTexture": "oil",
+    "enablePortal": true,
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:MountainBiome"
+      }
+    ],
+    "worldGenType": "Nether like gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:Limestone"
+    },
+    "secondaryFillerBlock": {
+      "value": "CUSTOM:NaoiphSlate"
+    },
+    "tertiaryFillerBlock": {
+      "value": "CUSTOM:LimeRockGrass"
+    },
+    "fluidBlock": {
+      "value": "Blocks.WATER"
+    },
+    "airColor": {
+      "value": -13421773,
+      "falpha": 0.0
+    },
+    "canRespawnHere": true,
+    "hasFog": true,
+    "hasWeather": false,
+    "isDark": true,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false,
+    "dimensionMusic": {
+      "value": "CUSTOM:deisirae"
+    }
+  }
+}

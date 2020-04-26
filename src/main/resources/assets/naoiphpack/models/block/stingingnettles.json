@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "naoiphpack:blocks/stinging_nettle",
+    "particle": "naoiphpack:blocks/stinging_nettle"
+  }
+}

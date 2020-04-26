@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "naoiphpack:block/limestonelargebrickslab"
+    },
+    "type=top": {
+      "model": "naoiphpack:block/limestonelargebrickslab_top"
+    },
+    "type=double": {
+      "model": "naoiphpack:block/limestonelargebrickslab_full"
+    }
+  }
+}

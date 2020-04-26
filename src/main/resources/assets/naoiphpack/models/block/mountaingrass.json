@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "naoiphpack:blocks/rassountain",
+    "particle": "naoiphpack:blocks/rassountain"
+  }
+}
